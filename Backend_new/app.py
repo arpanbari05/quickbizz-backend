@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, session
 from flask_pymongo import PyMongo
 from werkzeug.security import generate_password_hash, check_password_hash
 import re
@@ -193,6 +193,12 @@ def add_to_wishlist():
     product_id = data.get('product_id')
     user_email_or_phone = data.get('user_email_or_phone')
 
+    try:
+        # Convert product_id string to ObjectId
+        product_id = ObjectId(product_id)
+    except Exception as e:
+        return jsonify({'error': 'Invalid product_id format'}), 400
+
     # Check if product exists
     product = mongo.db.products.find_one({'_id': product_id})
     if not product:
@@ -233,8 +239,11 @@ def get_wishlist():
     # Get product details for each wishlist item
     products_in_wishlist = []
     for item in wishlist_items:
-        product = mongo.db.products.find_one({'_id': item['product_id']})
+        product_id = ObjectId(item['product_id'])
+        product = mongo.db.products.find_one({'_id': product_id})
         if product:
+             # Convert ObjectId to string for serialization
+            product['_id'] = str(product['_id'])
             products_in_wishlist.append(product)
 
     return jsonify(products_in_wishlist), 200
@@ -242,15 +251,15 @@ def get_wishlist():
 # Update (Modify an item in Wishlist) - Not necessary for this use case
 
 # Delete (Remove an item from Wishlist)
-@app.route('/wishlist/<wishlist_id>', methods=['DELETE'])
+@app.route('/wishlist/<string:wishlist_id>', methods=['DELETE'])
 def remove_from_wishlist(wishlist_id):
     # Check if wishlist item exists
-    wishlist_item = mongo.db.wishlist.find_one({'_id': wishlist_id})
+    wishlist_item = mongo.db.wishlist.find_one({'_id': ObjectId(wishlist_id)})
     if not wishlist_item:
         return jsonify({'error': 'Wishlist item not found'}), 404
 
     # Remove item from the wishlist
-    mongo.db.wishlist.delete_one({'_id': wishlist_id})
+    mongo.db.wishlist.delete_one({'_id': ObjectId(wishlist_id)})
 
     return jsonify({'message': 'Item removed from wishlist'}), 200
 
