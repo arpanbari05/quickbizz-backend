@@ -1,3 +1,4 @@
+import datetime
 from flask import Flask, request, jsonify, session
 from flask_pymongo import PyMongo
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -43,7 +44,8 @@ def search_products():
 @app.route('/signup', methods=['POST'])
 def signup():
     data = request.json
-    name = data.get('name')
+    first_name = data.get('first_name')
+    last_name = data.get('last_name')
     email_or_phone = data.get('email_or_phone')
     password = data.get('password')
 
@@ -62,10 +64,12 @@ def signup():
 
     # Create user document
     user_data = {
-        'name': name,
+        'first_name': first_name,
+        'last_name': last_name,
         'email': email_or_phone if re.match(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', email_or_phone) else None,
         'phone': email_or_phone if re.match(r'^\+?\d{10,}$', email_or_phone) else None,
-        'password': hashed_password
+        'password': hashed_password,
+        'address': '',
     }
 
     # Insert user into the database
@@ -191,7 +195,7 @@ def delete_product(product_id):
 def add_to_wishlist():
     data = request.json
     product_id = data.get('product_id')
-    user_email_or_phone = data.get('user_email_or_phone')
+    user_id = data.get('user_id')
 
     try:
         # Convert product_id string to ObjectId
@@ -203,21 +207,17 @@ def add_to_wishlist():
     product = mongo.db.products.find_one({'_id': product_id})
     if not product:
         return jsonify({'error': 'Product not found'}), 404
-
-    # Check if user exists
-    user = mongo.db.users.find_one({'$or': [{'email': user_email_or_phone}, {'phone': user_email_or_phone}]})
-    if not user:
-        return jsonify({'error': 'User not found'}), 404
+    
 
     # Check if the product is already in the user's wishlist
-    existing_wishlist_item = mongo.db.wishlist.find_one({'product_id': product_id, 'user_id': str(user['_id'])})
+    existing_wishlist_item = mongo.db.wishlist.find_one({'product_id': product_id, 'user_id': user_id})
     if existing_wishlist_item:
         return jsonify({'error': 'Product already in wishlist'}), 400
 
     # Add item to the wishlist
     wishlist_item = {
         'product_id': product_id,
-        'user_id': str(user['_id'])
+        'user_id': user_id
     }
     mongo.db.wishlist.insert_one(wishlist_item)
 
@@ -226,15 +226,10 @@ def add_to_wishlist():
 # Read (Retrieve items from Wishlist)
 @app.route('/wishlist', methods=['GET'])
 def get_wishlist():
-    user_email_or_phone = request.args.get('user_email_or_phone')
-
-    # Check if user exists
-    user = mongo.db.users.find_one({'$or': [{'email': user_email_or_phone}, {'phone': user_email_or_phone}]})
-    if not user:
-        return jsonify({'error': 'User not found'}), 404
+    user_id = request.args.get('user_id')
 
     # Retrieve items from the user's wishlist
-    wishlist_items = list(mongo.db.wishlist.find({'user_id': str(user['_id'])}))
+    wishlist_items = list(mongo.db.wishlist.find({'user_id': user_id}))
 
     # Get product details for each wishlist item
     products_in_wishlist = []
@@ -288,31 +283,20 @@ def find_wishlisted_products():
 
 
 
-
-
-
-
-
-
 # Route to add an item to the cart
 @app.route('/cart/add', methods=['POST'])
 def add_to_cart():
     data = request.json
     product_id = data.get('product_id')
-    user_email_or_phone = data.get('user_email_or_phone')
+    user_id = data.get('user_id')
 
     # Check if product exists
     product = mongo.db.products.find_one({'_id': product_id})
     if not product:
         return jsonify({'error': 'Product not found'}), 404
 
-    # Check if user exists
-    user = mongo.db.users.find_one({'$or': [{'email': user_email_or_phone}, {'phone': user_email_or_phone}]})
-    if not user:
-        return jsonify({'error': 'User not found'}), 404
-
     # Check if the product is already in the user's cart
-    existing_cart_item = mongo.db.cart.find_one({'product_id': product_id, 'user_id': str(user['_id'])})
+    existing_cart_item = mongo.db.cart.find_one({'product_id': product_id, 'user_id': user_id})
     if existing_cart_item:
         return jsonify({'error': 'Product already in cart'}), 400
 
@@ -322,7 +306,7 @@ def add_to_cart():
     # Create cart item document
     cart_item = {
         'product_id': product['_id'],
-        'user_id': str(user['_id']),
+        'user_id': user_id,
         'product': product,
         'quantity': 1,  # Default quantity is 1
         'total_price': total_price
@@ -336,15 +320,10 @@ def add_to_cart():
 # Route to find cart items and total price based on user email
 @app.route('/cart', methods=['GET'])
 def find_cart_items():
-    user_email_or_phone = request.args.get('user_email_or_phone')
-
-    # Check if user exists
-    user = mongo.db.users.find_one({'$or': [{'email': user_email_or_phone}, {'phone': user_email_or_phone}]})
-    if not user:
-        return jsonify({'error': 'User not found'}), 404
+    user_id = request.args.get('user_id')
 
     # Retrieve cart items for the user
-    cart_items = list(mongo.db.cart.find({'user_id': str(user['_id'])}))
+    cart_items = list(mongo.db.cart.find({'user_id': user_id}))
 
     # Calculate total price of all products in the cart
     total_price = sum(item['product']['price'] * item['quantity'] for item in cart_items)
@@ -360,8 +339,127 @@ def find_cart_items():
 
 
 
+# Account information update route
+@app.route('/account/update', methods=['PUT'])
+def update_account():
+    data = request.json
+    user_id = data.get('user_id')  # Assuming user_id is provided in the request
+    new_data = {}
+    
+    # Validate and update fields if provided
+    if 'first_name' in data:
+        new_data['first_name'] = data['first_name']
+    if 'last_name' in data:
+        new_data['last_name'] = data['last_name']
+    if 'address' in data:
+        new_data['address'] = data['address']
+    if 'email_or_phone' in data:
+        # Validate email or phone format
+        email_or_phone = data['email_or_phone']
+        if not re.match(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', email_or_phone) \
+                and not re.match(r'^\+?\d{10,}$', email_or_phone):
+            return jsonify({'error': 'Invalid email or phone format'}), 400
+        new_data['email'] = email_or_phone if re.match(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', email_or_phone) else None
+        new_data['phone'] = email_or_phone if re.match(r'^\+?\d{10,}$', email_or_phone) else None
+
+    # Update user information
+    result = mongo.db.users.update_one({'_id': ObjectId(user_id)}, {'$set': new_data})
+    if result.modified_count > 0:
+        return jsonify({'message': 'Account information updated successfully'}), 200
+    else:
+        return jsonify({'error': 'User not found'}), 404
+
+# Change password route
+@app.route('/account/change_password', methods=['PUT'])
+def change_password():
+    data = request.json
+    user_id = data.get('user_id')  # Assuming user_id is provided in the request
+    current_password = data.get('current_password')
+    new_password = data.get('new_password')
+    confirm_new_password = data.get('confirm_new_password')
+
+    # Check if new password matches confirm new password
+    if new_password != confirm_new_password:
+        return jsonify({'error': 'New password and confirm new password do not match'}), 400
+
+    # Check if user exists
+    user = mongo.db.users.find_one({'_id': ObjectId(user_id)})
+    if not user:
+        return jsonify({'error': 'User not found'}), 404
+
+    # Check if current password is correct
+    if not check_password_hash(user['password'], current_password):
+        return jsonify({'error': 'Current password is incorrect'}), 400
+
+    # Hash the new password
+    hashed_new_password = generate_password_hash(new_password)
+
+    # Update user's password
+    result = mongo.db.users.update_one({'_id': ObjectId(user_id)}, {'$set': {'password': hashed_new_password}})
+    if result.modified_count > 0:
+        return jsonify({'message': 'Password changed successfully'}), 200
+    else:
+        return jsonify({'error': 'Failed to change password'}), 500
+
+# Get user information route
+@app.route('/user/<string:user_id>', methods=['GET'])
+def get_user(user_id):
+    print(user_id)
+    user = mongo.db.users.find_one({'_id': ObjectId(user_id)})
+    if user:
+        # Remove the password field from the response
+        user.pop('password', None)
+        user['_id'] = str(user['_id'])
+        return jsonify(user), 200
+    else:
+        return jsonify({'error': 'User not found'}), 404
+    
+# Get all users route
+@app.route('/users', methods=['GET'])
+def get_all_users():
+    users = list(mongo.db.users.find({}, {'password': 0}))  # Exclude password field
+    
+    for user in users:
+        user['_id'] = str(user['_id'])
+        
+    return jsonify(users), 200
 
 
+
+# Add order route
+@app.route('/orders', methods=['POST'])
+def add_order():
+    data = request.json
+    user_id = data.get('user_id')
+    product_id = data.get('product_id')
+
+    # Validate input
+    if not (user_id and product_id):
+        return jsonify({'error': 'Missing required fields'}), 400
+
+    # Get product info
+    product = mongo.db.products.find_one({'_id': ObjectId(product_id)})
+    if not product:
+        return jsonify({'error': 'Product not found'}), 404
+
+    # Autofill order fields
+    total_amount = product.get('price')
+    order_date = datetime.utcnow()
+    status = 'In transit'
+
+    # Create order document
+    order_data = {
+        'user_id': ObjectId(user_id),
+        'product_id': ObjectId(product_id),
+        'total_amount': total_amount,
+        'order_date': order_date,
+        'status': status
+    }
+
+    # Insert order into the database
+    result = mongo.db.orders.insert_one(order_data)
+
+    return jsonify({'message': 'Order added successfully', 'order_id': str(result.inserted_id)}), 201
 
 
 
