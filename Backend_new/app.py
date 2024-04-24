@@ -114,6 +114,7 @@ def create_product():
     number_of_reviews = data.get('number_of_reviews')
     description = data.get('description')
     category = data.get('category')
+    image = data.get('image')
 
     if name and price:
         product_data = {
@@ -122,7 +123,8 @@ def create_product():
             'ratings': ratings,
             'number_of_reviews': number_of_reviews,
             'description': description,
-            'category': category
+            'category': category,
+            'image': image,
         }
         result = mongo.db.products.insert_one(product_data)
         return jsonify({'message': 'Product created successfully', 'product_id': str(result.inserted_id)}), 201
@@ -156,6 +158,7 @@ def update_product(product_id):
     number_of_reviews = data.get('number_of_reviews')
     description = data.get('description')
     category = data.get('category')
+    image = data.get('image')
 
     if name or price or ratings or number_of_reviews or description:
         update_data = {}
@@ -171,6 +174,8 @@ def update_product(product_id):
             update_data['description'] = description
         if category:
             update_data['category'] = category
+        if image:
+            update_data['image'] = image
         result = mongo.db.products.update_one({'_id': ObjectId(product_id)}, {'$set': update_data})
         if result.modified_count > 0:
             return jsonify({'message': 'Product updated successfully'}), 200
@@ -462,8 +467,40 @@ def add_order():
     return jsonify({'message': 'Order added successfully', 'order_id': str(result.inserted_id)}), 201
 
 
+# Sales route
+@app.route('/sales', methods=['GET'])
+def get_products_on_sale():
+    products = list(mongo.db.products.find({'price': {'$lt': 100}}))
+
+    # Convert ObjectId to str for serialization
+    for product in products:
+        product['_id'] = str(product['_id'])
+
+    return jsonify(products), 200
 
 
+# Best selling products route
+@app.route('/best-selling', methods=['GET'])
+def get_best_selling_products():
+    # Find products with reviews greater than 4.5
+    best_selling_products = list(mongo.db.products.find({'ratings': {'$gt': 4.5}}))
+
+    # Convert ObjectId to str for serialization
+    for product in best_selling_products:
+        product['_id'] = str(product['_id'])
+
+    return jsonify(best_selling_products), 200
+
+# Route to get products by category
+@app.route('/products/category/<string:category>', methods=['GET'])
+def get_products_by_category(category):
+    products = list(mongo.db.products.find({'category': category}))
+
+    # Convert ObjectId to str for serialization
+    for product in products:
+        product['_id'] = str(product['_id'])
+
+    return jsonify(products), 200
 
 
 if __name__ == '__main__':
