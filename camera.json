@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Canon EOS R5",
+    "price": 3899,
+    "description": "The Canon EOS R5 is a full-frame mirrorless camera with 8K video recording, 45MP sensor, and advanced Dual Pixel CMOS AF II.",
+    "ratings": 4.9,
+    "discount": 0,
+    "no_of_reviews": 500,
+    "category": "camera",
+    "image": "/camera/canon_eos_r5.jpg"
+  },
+  {
+    "name": "Nikon Z7 II",
+    "price": 2999,
+    "description": "The Nikon Z7 II is a high-resolution mirrorless camera with 45.7MP sensor, 4K video recording, and dual EXPEED 6 processors.",
+    "ratings": 4.8,
+    "discount": 100,
+    "no_of_reviews": 450,
+    "category": "camera",
+    "image": "/camera/nikon_z7_ii.jpg"
+  },
+  {
+    "name": "Sony Alpha a7R IV",
+    "price": 3499,
+    "description": "The Sony Alpha a7R IV boasts a 61MP full-frame sensor, 4K video recording, and 567-point phase-detection AF system.",
+    "ratings": 4.7,
+    "discount": 200,
+    "no_of_reviews": 600,
+    "category": "camera",
+    "image": "/camera/sony_alpha_a7r_iv.jpg"
+  },
+  {
+    "name": "Fujifilm X-T4",
+    "price": 1699,
+    "description": "The Fujifilm X-T4 is a versatile mirrorless camera with 26.1MP sensor, 4K/60p video recording, and in-body image sta/camera/bilization.",
+    "ratings": 4.6,
+    "discount": 50,
+    "no_of_reviews": 400,
+    "category": "camera",
+    "image": "/camera/fujifilm_x_t4.jpg"
+  },
+  {
+    "name": "Panasonic Lumix S5",
+    "price": 1999,
+    "description": "The Panasonic Lumix S5 is a compact full-frame mirrorless camera with 24.2MP sensor, 4K/60p video recording, and Dual IS 2.",
+    "ratings": 4.5,
+    "discount": 0,
+    "no_of_reviews": 300,
+    "category": "camera",
+    "image": "/camera/panasonic_lumix_s5.jpg"
+  },
+  {
+    "name": "Leica Q2",
+    "price": 5495,
+    "description": "The Leica Q2 is a premium compact camera with a 47.3MP full-frame sensor, fixed 28mm f/1.7 lens, and 4K video recording.",
+    "ratings": 4.9,
+    "discount": 0,
+    "no_of_reviews": 200,
+    "category": "camera",
+    "image": "/camera/leica_q2.jpg"
+  },
+  {
+    "name": "Olympus OM-D E-M1 Mark III",
+    "price": 1799,
+    "description": "The Olympus OM-D E-M1 Mark III is a weather-sealed mirrorless camera with 20.4MP sensor, 4K video recording, and 121-point AF system.",
+    "ratings": 4.7,
+    "discount": 100,
+    "no_of_reviews": 250,
+    "category": "camera",
+    "image": "/camera/olympus_om_d_e_m1_mark_iii.jpg"
+  },
+  {
+    "name": "Canon EOS-1D X Mark III",
+    "price": 6499,
+    "description": "The Canon EOS-1D X Mark III is a flagship DSLR camera with 20.1MP sensor, 5.5K RAW video recording, and advanced AF system.",
+    "ratings": 4.8,
+    "discount": 0,
+    "no_of_reviews": 150,
+    "category": "camera",
+    "image": "/camera/canon_eos_1d_x_mark_iii.jpg"
+  },
+  {
+    "name": "Nikon D850",
+    "price": 2999,
+    "description": "The Nikon D850 is a high-resolution DSLR camera with 45.7MP sensor, 4K video recording, and 153-point AF system.",
+    "ratings": 4.6,
+    "discount": 200,
+    "no_of_reviews": 300,
+    "category": "camera",
+    "image": "/camera/nikon_d850.jpg"
+  },
+  {
+    "name": "Sony Cyber-shot RX100 VII",
+    "price": 1299,
+    "description": "The Sony Cyber-shot RX100 VII is a compact camera with a 20.1MP sensor, 4K video recording, and advanced autofocus system.",
+    "ratings": 4.5,
+    "discount": 50,
+    "no_of_reviews": 400,
+    "category": "camera",
+    "image": "/camera/sony_cybershot_rx100_vii.jpg"
+  }
+]

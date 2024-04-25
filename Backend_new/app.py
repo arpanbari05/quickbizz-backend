@@ -7,22 +7,27 @@ from bson.regex import Regex
 from flask_cors import CORS
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
+from flask_pymongo import PyMongo
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # Change this to a random secret key
-uri = "mongodb+srv://arpanbari05:Sachin10@cluster0.gfggbs6.mongodb.net/QuickBizz?retryWrites=true&w=majority"
 
-# Create a new client and connect to the server
-client = MongoClient(uri)
 
-# Create a new client and connect to the server
-mongo = MongoClient(uri, server_api=ServerApi('1'))
-# Send a ping to confirm a successful connection
-try:
-    client.admin.command('ping')
-    print("Pinged your deployment. You successfully connected to MongoDB!")
-except Exception as e:
-    print(e)
+# uri = "mongodb+srv://arpanbari05:Sachin10@cluster0.gfggbs6.mongodb.net/QuickBizz?retryWrites=true&w=majority"
+# # Create a new client and connect to the server
+# client = MongoClient(uri)
+
+# # Create a new client and connect to the server
+# mongo = MongoClient(uri, server_api=ServerApi('1'))
+# # Send a ping to confirm a successful connection
+# try:
+#     client.admin.command('ping')
+#     print("Pinged your deployment. You successfully connected to MongoDB!")
+# except Exception as e:
+#     print(e)
+
+app.config['MONGO_URI'] = 'mongodb://localhost:27017/QuickBizz'  # Update with your MongoDB URI
+mongo = PyMongo(app)
 
 CORS(app)
 
@@ -529,7 +534,7 @@ def get_orders_by_user_id(user_id):
 # Sales route
 @app.route('/sales', methods=['GET'])
 def get_products_on_sale():
-    products = list(mongo.db.products.find({'price': {'$lt': 100}}))
+    products = list(mongo.db.products.find({'price': {'$lt': 1000}}))
 
     # Convert ObjectId to str for serialization
     for product in products:

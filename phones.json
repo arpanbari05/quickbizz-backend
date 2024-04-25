@@ -1,0 +1,153 @@
+[
+  {
+    "name": "iPhone 13 Pro",
+    "price": 999,
+    "description": "The iPhone 13 Pro features a ProMotion display, A15 Bionic chip, Pro camera system, and 5G capability.",
+    "ratings": 4.8,
+    "discount": 0,
+    "no_of_reviews": 1200,
+    "category": "phones",
+    "image": "/phones/iphone_13_pro.jpg"
+  },
+  {
+    "name": "Samsung Galaxy S21 Ultra",
+    "price": 1199,
+    "description": "The Samsung Galaxy S21 Ultra boasts a 108MP camera, 120Hz Dynamic AMOLED display, and powerful Exynos 2100 processor.",
+    "ratings": 4.7,
+    "discount": 50,
+    "no_of_reviews": 1500,
+    "category": "phones",
+    "image": "/phones/samsung_galaxy_s21_ultra.jpg"
+  },
+  {
+    "name": "Google Pixel 6 Pro",
+    "price": 899,
+    "description": "The Google Pixel 6 Pro features a Tensor chip for AI-enhanced photography, 120Hz OLED display, and 5G connectivity.",
+    "ratings": 4.6,
+    "discount": 0,
+    "no_of_reviews": 900,
+    "category": "phones",
+    "image": "/phones/google_pixel_6_pro.jpg"
+  },
+  {
+    "name": "OnePlus 9 Pro",
+    "price": 969,
+    "description": "The OnePlus 9 Pro offers Hasselblad-tuned cameras, Snapdragon 888 processor, and a fluid AMOLED display with 120Hz refresh rate.",
+    "ratings": 4.5,
+    "discount": 20,
+    "no_of_reviews": 800,
+    "category": "phones",
+    "image": "/phones/oneplus_9_pro.jpg"
+  },
+  {
+    "name": "Xiaomi Mi 11 Ultra",
+    "price": 1099,
+    "description": "The Xiaomi Mi 11 Ultra features a massive 50MP camera, Snapdragon 888 processor, and a secondary display on the back.",
+    "ratings": 4.6,
+    "discount": 30,
+    "no_of_reviews": 1000,
+    "category": "phones",
+    "image": "/phones/xiaomi_mi_11_ultra.jpg"
+  },
+  {
+    "name": "Sony Xperia 1 III",
+    "price": 1299,
+    "description": "The Sony Xperia 1 III offers a 4K OLED display, Snapdragon 888 processor, and a versatile camera system with ZEISS optics.",
+    "ratings": 4.5,
+    "discount": 0,
+    "no_of_reviews": 700,
+    "category": "phones",
+    "image": "/phones/sony_xperia_1_iii.jpg"
+  },
+  {
+    "name": "Asus ROG Phone 5",
+    "price": 999,
+    "description": "The Asus ROG Phone 5 is a gaming powerhouse with Snapdragon 888 processor, 144Hz AMOLED display, and ultrasonic trigger buttons.",
+    "ratings": 4.7,
+    "discount": 0,
+    "no_of_reviews": 600,
+    "category": "phones",
+    "image": "/phones/asus_rog_phone_5.jpg"
+  },
+  {
+    "name": "Huawei P50 Pro",
+    "price": 1199,
+    "description": "The Huawei P50 Pro features a Leica quad-camera setup, Kirin 9000 processor, and a gorgeous OLED display.",
+    "ratings": 4.4,
+    "discount": 10,
+    "no_of_reviews": 850,
+    "category": "phones",
+    "image": "/phones/huawei_p50_pro.jpg"
+  },
+  {
+    "name": "Realme GT",
+    "price": 599,
+    "description": "The Realme GT offers flagship-level performance with Snapdragon 888 processor, 120Hz Super AMOLED display, and a sleek design.",
+    "ratings": 4.5,
+    "discount": 0,
+    "no_of_reviews": 500,
+    "category": "phones",
+    "image": "/phones/realme_gt.jpg"
+  },
+  {
+    "name": "Oppo Find X3 Pro",
+    "price": 1099,
+    "description": "The Oppo Find X3 Pro features a unique design, Snapdragon 888 processor, and a versatile camera system with microscope lens.",
+    "ratings": 4.4,
+    "discount": 15,
+    "no_of_reviews": 750,
+    "category": "phones",
+    "image": "/phones/oppo_find_x3_pro.jpg"
+  },
+  {
+    "name": "Motorola Edge+",
+    "price": 999,
+    "description": "The Motorola Edge+ offers a Snapdragon 888 processor, 108MP camera, and a 144Hz OLED display.",
+    "ratings": 4.3,
+    "discount": 0,
+    "no_of_reviews": 400,
+    "category": "phones",
+    "image": "/phones/motorola_edge_plus.jpg"
+  },
+  {
+    "name": "Vivo X60 Pro+",
+    "price": 899,
+    "description": "The Vivo X60 Pro+ features a Zeiss-tuned camera system, Snapdragon 888 processor, and a 120Hz AMOLED display.",
+    "ratings": 4.5,
+    "discount": 25,
+    "no_of_reviews": 600,
+    "category": "phones",
+    "image": "/phones/vivo_x60_pro_plus.jpg"
+  },
+  {
+    "name": "Nokia X20",
+    "price": 499,
+    "description": "The Nokia X20 offers a Snapdragon 480 processor, Zeiss optics cameras, and a sturdy build with a Nordic design.",
+    "ratings": 4.2,
+    "discount": 10,
+    "no_of_reviews": 300,
+    "category": "phones",
+    "image": "/phones/nokia_x20.jpg"
+  },
+  {
+    "name": "Lenovo Legion Phone Duel 2",
+    "price": 1099,
+    "description": "The Lenovo Legion Phone Duel 2 is a gaming-centric phone with Snapdragon 888 processor, dual cooling fans, and a 144Hz AMOLED display.",
+    "ratings": 4.6,
+    "discount": 0,
+    "no_of_reviews": 550,
+    "category": "phones",
+    "image": "/phones/lenovo_legion_phone_duel_2.jpg"
+  },
+  {
+    "name": "LG Wing",
+    "price": 999,
+    "description": "The LG Wing features a unique swivel design, Snapdragon 765G processor, and a triple-camera setup with a gimbal mode.",
+    "ratings": 4.3,
+    "discount": 0,
+    "no_of_reviews": 400,
+    "category": "phones",
+    "image": "/phones/lg_wing.jpg"
+  }
+  
+]

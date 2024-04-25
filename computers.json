@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Dell XPS 15",
+    "price": 1499.99,
+    "discount": 100,
+    "category": "computers",
+    "description": "Powerful laptop with stunning 4K OLED display and top-notch performance.",
+    "ratings": 4.8,
+    "no_of_reviews": 256,
+    "image": "dell_xps_15.jpg"
+  },
+  {
+    "name": "Apple MacBook Pro",
+    "price": 1999.99,
+    "discount": 0,
+    "category": "computers",
+    "description": "Sleek and powerful laptop for professionals, featuring the latest M1 chip.",
+    "ratings": 4.9,
+    "no_of_reviews": 312,
+    "image": "macbook_pro.jpg"
+  },
+  {
+    "name": "Lenovo ThinkPad X1 Carbon",
+    "price": 1299.99,
+    "discount": 50,
+    "category": "computers",
+    "description": "Ultra-light and durable business laptop with impressive battery life.",
+    "ratings": 4.7,
+    "no_of_reviews": 189,
+    "image": "thinkpad_x1_carbon.jpg"
+  },
+  {
+    "name": "Microsoft Surface Laptop 4",
+    "price": 1299.99,
+    "discount": 0,
+    "category": "computers",
+    "description": "Elegant and versatile laptop with touchscreen and powerful performance.",
+    "ratings": 4.6,
+    "no_of_reviews": 425,
+    "image": "surface_laptop_4.jpg"
+  },
+  {
+    "name": "HP Spectre x360",
+    "price": 1199.99,
+    "discount": 100,
+    "category": "computers",
+    "description": "Convertible laptop with stunning design and long battery life.",
+    "ratings": 4.5,
+    "no_of_reviews": 278,
+    "image": "hp_spectre_x360.jpg"
+  },
+  {
+    "name": "Asus ROG Zephyrus G14",
+    "price": 1499.99,
+    "discount": 0,
+    "category": "computers",
+    "description": "Powerful gaming laptop with AMD Ryzen 9 processor and RTX 3060 graphics.",
+    "ratings": 4.8,
+    "no_of_reviews": 342,
+    "image": "rog_zephyrus_g14.jpg"
+  },
+  {
+    "name": "Razer Blade 15",
+    "price": 1799.99,
+    "discount": 200,
+    "category": "computers",
+    "description": "High-performance gaming laptop with customizable RGB lighting.",
+    "ratings": 4.7,
+    "no_of_reviews": 496,
+    "image": "razer_blade_15.jpg"
+  },
+  {
+    "name": "Acer Predator Helios 300",
+    "price": 1299.99,
+    "discount": 0,
+    "category": "computers",
+    "description": "Affordable gaming laptop with 144Hz display and GTX 1660 Ti graphics.",
+    "ratings": 4.6,
+    "no_of_reviews": 567,
+    "image": "predator_helios_300.jpg"
+  },
+  {
+    "name": "Alienware Area-51m",
+    "price": 2999.99,
+    "discount": 300,
+    "category": "computers",
+    "description": "Desktop replacement gaming laptop with desktop-grade CPU and GPU options.",
+    "ratings": 4.9,
+    "no_of_reviews": 623,
+    "image": "alienware_area_51m.jpg"
+  },
+  {
+    "name": "LG Gram 17",
+    "price": 1499.99,
+    "discount": 100,
+    "category": "computers",
+    "description": "Ultra-lightweight laptop with long-lasting battery and large 17-inch display.",
+    "ratings": 4.7,
+    "no_of_reviews": 398,
+    "image": "lg_gram_17.jpg"
+  }
+]

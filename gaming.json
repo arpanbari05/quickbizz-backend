@@ -1,0 +1,102 @@
+[
+  {
+    "name": "PlayStation 5",
+    "price": 499.99,
+    "discount": 0,
+    "category": "gaming",
+    "description": "Next-gen gaming console with ultra-fast SSD and immersive 3D audio.",
+    "ratings": 4.9,
+    "no_of_reviews": 1456,
+    "image": "playstation_5.jpg"
+  },
+  {
+    "name": "Xbox Series X",
+    "price": 499.99,
+    "discount": 0,
+    "category": "gaming",
+    "description": "Powerful gaming console with support for 4K gaming and ray tracing.",
+    "ratings": 4.8,
+    "no_of_reviews": 1789,
+    "image": "xbox_series_x.jpg"
+  },
+  {
+    "name": "Nintendo Switch OLED Model",
+    "price": 349.99,
+    "discount": 0,
+    "category": "gaming",
+    "description": "Portable gaming console with vibrant OLED display and enhanced audio.",
+    "ratings": 4.7,
+    "no_of_reviews": 987,
+    "image": "nintendo_switch_oled.jpg"
+  },
+  {
+    "name": "Sony PlayStation 4 Pro",
+    "price": 399.99,
+    "discount": 50,
+    "category": "gaming",
+    "description": "High-performance gaming console with 4K gaming and HDR support.",
+    "ratings": 4.7,
+    "no_of_reviews": 765,
+    "image": "playstation_4_pro.jpg"
+  },
+  {
+    "name": "Nintendo Switch Lite",
+    "price": 199.99,
+    "discount": 0,
+    "category": "gaming",
+    "description": "Compact and lightweight gaming console for handheld gaming on-the-go.",
+    "ratings": 4.8,
+    "no_of_reviews": 543,
+    "image": "nintendo_switch_lite.jpg"
+  },
+  {
+    "name": "Xbox Series S",
+    "price": 299.99,
+    "discount": 20,
+    "category": "gaming",
+    "description": "Next-gen gaming console with all-digital experience and 1440p gaming.",
+    "ratings": 4.6,
+    "no_of_reviews": 432,
+    "image": "xbox_series_s.jpg"
+  },
+  {
+    "name": "Sony PlayStation VR",
+    "price": 299.99,
+    "discount": 0,
+    "category": "gaming",
+    "description": "Immersive virtual reality headset for PlayStation gaming experiences.",
+    "ratings": 4.5,
+    "no_of_reviews": 321,
+    "image": "playstation_vr.jpg"
+  },
+  {
+    "name": "Oculus Quest 2",
+    "price": 299.99,
+    "discount": 0,
+    "category": "gaming",
+    "description": "All-in-one VR gaming headset with high-resolution display and easy setup.",
+    "ratings": 4.7,
+    "no_of_reviews": 210,
+    "image": "oculus_quest_2.jpg"
+  },
+  {
+    "name": "Razer BlackWidow V3",
+    "price": 139.99,
+    "discount": 10,
+    "category": "gaming",
+    "description": "Mechanical gaming keyboard with customizable Chroma RGB lighting.",
+    "ratings": 4.6,
+    "no_of_reviews": 156,
+    "image": "razer_blackwidow_v3.jpg"
+  },
+  {
+    "name": "Logitech G502 HERO",
+    "price": 79.99,
+    "discount": 0,
+    "category": "gaming",
+    "description": "High-performance gaming mouse with advanced HERO sensor and customizable weights.",
+    "ratings": 4.8,
+    "no_of_reviews": 423,
+    "image": "logitech_g502_hero.jpg"
+  }
+]
