@@ -7,7 +7,15 @@
     "description": "Latest smartwatch from Apple with larger display and faster charging.",
     "ratings": 4.8,
     "no_of_reviews": 567,
-    "image": "apple_watch_series_7.jpg"
+    "image": "apple_watch_series_7.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Samsung Galaxy Watch 4 Classic",
@@ -17,7 +25,15 @@
     "description": "Premium smartwatch with rotating bezel and advanced health tracking features.",
     "ratings": 4.7,
     "no_of_reviews": 432,
-    "image": "galaxy_watch_4_classic.jpg"
+    "image": "galaxy_watch_4_classic.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Fitbit Versa 3",
@@ -27,7 +43,15 @@
     "description": "Fitness-focused smartwatch with built-in GPS and heart rate monitoring.",
     "ratings": 4.6,
     "no_of_reviews": 189,
-    "image": "fitbit_versa_3.jpg"
+    "image": "fitbit_versa_3.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Garmin Fenix 6 Pro",
@@ -37,7 +61,15 @@
     "description": "Premium multisport GPS watch with rugged design and long battery life.",
     "ratings": 4.9,
     "no_of_reviews": 765,
-    "image": "garmin_fenix_6_pro.jpg"
+    "image": "garmin_fenix_6_pro.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Huawei Watch GT 2 Pro",
@@ -47,7 +79,15 @@
     "description": "Stylish smartwatch with AMOLED display and up to 2 weeks of battery life.",
     "ratings": 4.5,
     "no_of_reviews": 243,
-    "image": "huawei_watch_gt_2_pro.jpg"
+    "image": "huawei_watch_gt_2_pro.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Fossil Gen 5",
@@ -57,7 +97,15 @@
     "description": "Fashionable smartwatch with Wear OS by Google and customizable dials.",
     "ratings": 4.7,
     "no_of_reviews": 321,
-    "image": "fossil_gen_5.jpg"
+    "image": "fossil_gen_5.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "TicWatch Pro 3",
@@ -67,7 +115,15 @@
     "description": "Dual-layer display smartwatch with long battery life and essential health tracking.",
     "ratings": 4.6,
     "no_of_reviews": 156,
-    "image": "ticwatch_pro_3.jpg"
+    "image": "ticwatch_pro_3.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Amazfit GTR 3",
@@ -77,7 +133,15 @@
     "description": "Affordable smartwatch with AMOLED display and 24-day battery life.",
     "ratings": 4.5,
     "no_of_reviews": 98,
-    "image": "amazfit_gtr_3.jpg"
+    "image": "amazfit_gtr_3.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Mobvoi TicWatch E3",
@@ -87,7 +151,15 @@
     "description": "Budget-friendly smartwatch with Wear OS by Google and built-in GPS.",
     "ratings": 4.4,
     "no_of_reviews": 210,
-    "image": "ticwatch_e3.jpg"
+    "image": "ticwatch_e3.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Xiaomi Mi Watch Revolve",
@@ -97,6 +169,14 @@
     "description": "Feature-packed smartwatch with SpO2 tracking and long-lasting battery.",
     "ratings": 4.3,
     "no_of_reviews": 167,
-    "image": "mi_watch_revolve.jpg"
+    "image": "mi_watch_revolve.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   }
 ]

@@ -7,7 +7,15 @@
     "description": "Next-gen gaming console with ultra-fast SSD and immersive 3D audio.",
     "ratings": 4.9,
     "no_of_reviews": 1456,
-    "image": "playstation_5.jpg"
+    "image": "playstation_5.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Xbox Series X",
@@ -17,7 +25,15 @@
     "description": "Powerful gaming console with support for 4K gaming and ray tracing.",
     "ratings": 4.8,
     "no_of_reviews": 1789,
-    "image": "xbox_series_x.jpg"
+    "image": "xbox_series_x.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Nintendo Switch OLED Model",
@@ -27,7 +43,15 @@
     "description": "Portable gaming console with vibrant OLED display and enhanced audio.",
     "ratings": 4.7,
     "no_of_reviews": 987,
-    "image": "nintendo_switch_oled.jpg"
+    "image": "nintendo_switch_oled.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Sony PlayStation 4 Pro",
@@ -37,7 +61,15 @@
     "description": "High-performance gaming console with 4K gaming and HDR support.",
     "ratings": 4.7,
     "no_of_reviews": 765,
-    "image": "playstation_4_pro.jpg"
+    "image": "playstation_4_pro.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Nintendo Switch Lite",
@@ -47,7 +79,15 @@
     "description": "Compact and lightweight gaming console for handheld gaming on-the-go.",
     "ratings": 4.8,
     "no_of_reviews": 543,
-    "image": "nintendo_switch_lite.jpg"
+    "image": "nintendo_switch_lite.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Xbox Series S",
@@ -57,7 +97,15 @@
     "description": "Next-gen gaming console with all-digital experience and 1440p gaming.",
     "ratings": 4.6,
     "no_of_reviews": 432,
-    "image": "xbox_series_s.jpg"
+    "image": "xbox_series_s.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Sony PlayStation VR",
@@ -67,7 +115,15 @@
     "description": "Immersive virtual reality headset for PlayStation gaming experiences.",
     "ratings": 4.5,
     "no_of_reviews": 321,
-    "image": "playstation_vr.jpg"
+    "image": "playstation_vr.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Oculus Quest 2",
@@ -77,7 +133,15 @@
     "description": "All-in-one VR gaming headset with high-resolution display and easy setup.",
     "ratings": 4.7,
     "no_of_reviews": 210,
-    "image": "oculus_quest_2.jpg"
+    "image": "oculus_quest_2.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Razer BlackWidow V3",
@@ -87,7 +151,15 @@
     "description": "Mechanical gaming keyboard with customizable Chroma RGB lighting.",
     "ratings": 4.6,
     "no_of_reviews": 156,
-    "image": "razer_blackwidow_v3.jpg"
+    "image": "razer_blackwidow_v3.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Logitech G502 HERO",
@@ -97,6 +169,14 @@
     "description": "High-performance gaming mouse with advanced HERO sensor and customizable weights.",
     "ratings": 4.8,
     "no_of_reviews": 423,
-    "image": "logitech_g502_hero.jpg"
+    "image": "logitech_g502_hero.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   }
 ]

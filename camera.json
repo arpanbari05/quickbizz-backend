@@ -7,7 +7,15 @@
     "discount": 0,
     "no_of_reviews": 500,
     "category": "camera",
-    "image": "/camera/canon_eos_r5.jpg"
+    "image": "/camera/canon_eos_r5.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Nikon Z7 II",
@@ -17,7 +25,15 @@
     "discount": 100,
     "no_of_reviews": 450,
     "category": "camera",
-    "image": "/camera/nikon_z7_ii.jpg"
+    "image": "/camera/nikon_z7_ii.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Sony Alpha a7R IV",
@@ -27,7 +43,15 @@
     "discount": 200,
     "no_of_reviews": 600,
     "category": "camera",
-    "image": "/camera/sony_alpha_a7r_iv.jpg"
+    "image": "/camera/sony_alpha_a7r_iv.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Fujifilm X-T4",
@@ -37,7 +61,15 @@
     "discount": 50,
     "no_of_reviews": 400,
     "category": "camera",
-    "image": "/camera/fujifilm_x_t4.jpg"
+    "image": "/camera/fujifilm_x_t4.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Panasonic Lumix S5",
@@ -47,7 +79,15 @@
     "discount": 0,
     "no_of_reviews": 300,
     "category": "camera",
-    "image": "/camera/panasonic_lumix_s5.jpg"
+    "image": "/camera/panasonic_lumix_s5.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Leica Q2",
@@ -57,7 +97,15 @@
     "discount": 0,
     "no_of_reviews": 200,
     "category": "camera",
-    "image": "/camera/leica_q2.jpg"
+    "image": "/camera/leica_q2.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Olympus OM-D E-M1 Mark III",
@@ -67,7 +115,15 @@
     "discount": 100,
     "no_of_reviews": 250,
     "category": "camera",
-    "image": "/camera/olympus_om_d_e_m1_mark_iii.jpg"
+    "image": "/camera/olympus_om_d_e_m1_mark_iii.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Canon EOS-1D X Mark III",
@@ -77,7 +133,15 @@
     "discount": 0,
     "no_of_reviews": 150,
     "category": "camera",
-    "image": "/camera/canon_eos_1d_x_mark_iii.jpg"
+    "image": "/camera/canon_eos_1d_x_mark_iii.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Nikon D850",
@@ -87,7 +151,15 @@
     "discount": 200,
     "no_of_reviews": 300,
     "category": "camera",
-    "image": "/camera/nikon_d850.jpg"
+    "image": "/camera/nikon_d850.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Sony Cyber-shot RX100 VII",
@@ -97,6 +169,14 @@
     "discount": 50,
     "no_of_reviews": 400,
     "category": "camera",
-    "image": "/camera/sony_cybershot_rx100_vii.jpg"
+    "image": "/camera/sony_cybershot_rx100_vii.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   }
 ]

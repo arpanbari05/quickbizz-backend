@@ -1,0 +1,1173 @@
+[
+  {
+    "name": "Canon EOS R5",
+    "price": 3899,
+    "description": "The Canon EOS R5 is a full-frame mirrorless camera with 8K video recording, 45MP sensor, and advanced Dual Pixel CMOS AF II.",
+    "ratings": 4.9,
+    "discount": 0,
+    "no_of_reviews": 500,
+    "category": "camera",
+    "image": "/camera/canon_eos_r5.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Nikon Z7 II",
+    "price": 2999,
+    "description": "The Nikon Z7 II is a high-resolution mirrorless camera with 45.7MP sensor, 4K video recording, and dual EXPEED 6 processors.",
+    "ratings": 4.8,
+    "discount": 100,
+    "no_of_reviews": 450,
+    "category": "camera",
+    "image": "/camera/nikon_z7_ii.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Sony Alpha a7R IV",
+    "price": 3499,
+    "description": "The Sony Alpha a7R IV boasts a 61MP full-frame sensor, 4K video recording, and 567-point phase-detection AF system.",
+    "ratings": 4.7,
+    "discount": 200,
+    "no_of_reviews": 600,
+    "category": "camera",
+    "image": "/camera/sony_alpha_a7r_iv.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Fujifilm X-T4",
+    "price": 1699,
+    "description": "The Fujifilm X-T4 is a versatile mirrorless camera with 26.1MP sensor, 4K/60p video recording, and in-body image sta/camera/bilization.",
+    "ratings": 4.6,
+    "discount": 50,
+    "no_of_reviews": 400,
+    "category": "camera",
+    "image": "/camera/fujifilm_x_t4.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Panasonic Lumix S5",
+    "price": 1999,
+    "description": "The Panasonic Lumix S5 is a compact full-frame mirrorless camera with 24.2MP sensor, 4K/60p video recording, and Dual IS 2.",
+    "ratings": 4.5,
+    "discount": 0,
+    "no_of_reviews": 300,
+    "category": "camera",
+    "image": "/camera/panasonic_lumix_s5.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Leica Q2",
+    "price": 5495,
+    "description": "The Leica Q2 is a premium compact camera with a 47.3MP full-frame sensor, fixed 28mm f/1.7 lens, and 4K video recording.",
+    "ratings": 4.9,
+    "discount": 0,
+    "no_of_reviews": 200,
+    "category": "camera",
+    "image": "/camera/leica_q2.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Olympus OM-D E-M1 Mark III",
+    "price": 1799,
+    "description": "The Olympus OM-D E-M1 Mark III is a weather-sealed mirrorless camera with 20.4MP sensor, 4K video recording, and 121-point AF system.",
+    "ratings": 4.7,
+    "discount": 100,
+    "no_of_reviews": 250,
+    "category": "camera",
+    "image": "/camera/olympus_om_d_e_m1_mark_iii.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Canon EOS-1D X Mark III",
+    "price": 6499,
+    "description": "The Canon EOS-1D X Mark III is a flagship DSLR camera with 20.1MP sensor, 5.5K RAW video recording, and advanced AF system.",
+    "ratings": 4.8,
+    "discount": 0,
+    "no_of_reviews": 150,
+    "category": "camera",
+    "image": "/camera/canon_eos_1d_x_mark_iii.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Nikon D850",
+    "price": 2999,
+    "description": "The Nikon D850 is a high-resolution DSLR camera with 45.7MP sensor, 4K video recording, and 153-point AF system.",
+    "ratings": 4.6,
+    "discount": 200,
+    "no_of_reviews": 300,
+    "category": "camera",
+    "image": "/camera/nikon_d850.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Sony Cyber-shot RX100 VII",
+    "price": 1299,
+    "description": "The Sony Cyber-shot RX100 VII is a compact camera with a 20.1MP sensor, 4K video recording, and advanced autofocus system.",
+    "ratings": 4.5,
+    "discount": 50,
+    "no_of_reviews": 400,
+    "category": "camera",
+    "image": "/camera/sony_cybershot_rx100_vii.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Dell XPS 15",
+    "price": 1499.99,
+    "discount": 100,
+    "category": "computers",
+    "description": "Powerful laptop with stunning 4K OLED display and top-notch performance.",
+    "ratings": 4.8,
+    "no_of_reviews": 256,
+    "image": "dell_xps_15.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Apple MacBook Pro",
+    "price": 1999.99,
+    "discount": 0,
+    "category": "computers",
+    "description": "Sleek and powerful laptop for professionals, featuring the latest M1 chip.",
+    "ratings": 4.9,
+    "no_of_reviews": 312,
+    "image": "macbook_pro.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Lenovo ThinkPad X1 Carbon",
+    "price": 1299.99,
+    "discount": 50,
+    "category": "computers",
+    "description": "Ultra-light and durable business laptop with impressive battery life.",
+    "ratings": 4.7,
+    "no_of_reviews": 189,
+    "image": "thinkpad_x1_carbon.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Microsoft Surface Laptop 4",
+    "price": 1299.99,
+    "discount": 0,
+    "category": "computers",
+    "description": "Elegant and versatile laptop with touchscreen and powerful performance.",
+    "ratings": 4.6,
+    "no_of_reviews": 425,
+    "image": "surface_laptop_4.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "HP Spectre x360",
+    "price": 1199.99,
+    "discount": 100,
+    "category": "computers",
+    "description": "Convertible laptop with stunning design and long battery life.",
+    "ratings": 4.5,
+    "no_of_reviews": 278,
+    "image": "hp_spectre_x360.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Asus ROG Zephyrus G14",
+    "price": 1499.99,
+    "discount": 0,
+    "category": "computers",
+    "description": "Powerful gaming laptop with AMD Ryzen 9 processor and RTX 3060 graphics.",
+    "ratings": 4.8,
+    "no_of_reviews": 342,
+    "image": "rog_zephyrus_g14.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Razer Blade 15",
+    "price": 1799.99,
+    "discount": 200,
+    "category": "computers",
+    "description": "High-performance gaming laptop with customizable RGB lighting.",
+    "ratings": 4.7,
+    "no_of_reviews": 496,
+    "image": "razer_blade_15.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Acer Predator Helios 300",
+    "price": 1299.99,
+    "discount": 0,
+    "category": "computers",
+    "description": "Affordable gaming laptop with 144Hz display and GTX 1660 Ti graphics.",
+    "ratings": 4.6,
+    "no_of_reviews": 567,
+    "image": "predator_helios_300.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Alienware Area-51m",
+    "price": 2999.99,
+    "discount": 300,
+    "category": "computers",
+    "description": "Desktop replacement gaming laptop with desktop-grade CPU and GPU options.",
+    "ratings": 4.9,
+    "no_of_reviews": 623,
+    "image": "alienware_area_51m.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "LG Gram 17",
+    "price": 1499.99,
+    "discount": 100,
+    "category": "computers",
+    "description": "Ultra-lightweight laptop with long-lasting battery and large 17-inch display.",
+    "ratings": 4.7,
+    "no_of_reviews": 398,
+    "image": "lg_gram_17.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "PlayStation 5",
+    "price": 499.99,
+    "discount": 0,
+    "category": "gaming",
+    "description": "Next-gen gaming console with ultra-fast SSD and immersive 3D audio.",
+    "ratings": 4.9,
+    "no_of_reviews": 1456,
+    "image": "playstation_5.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Xbox Series X",
+    "price": 499.99,
+    "discount": 0,
+    "category": "gaming",
+    "description": "Powerful gaming console with support for 4K gaming and ray tracing.",
+    "ratings": 4.8,
+    "no_of_reviews": 1789,
+    "image": "xbox_series_x.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Nintendo Switch OLED Model",
+    "price": 349.99,
+    "discount": 0,
+    "category": "gaming",
+    "description": "Portable gaming console with vibrant OLED display and enhanced audio.",
+    "ratings": 4.7,
+    "no_of_reviews": 987,
+    "image": "nintendo_switch_oled.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Sony PlayStation 4 Pro",
+    "price": 399.99,
+    "discount": 50,
+    "category": "gaming",
+    "description": "High-performance gaming console with 4K gaming and HDR support.",
+    "ratings": 4.7,
+    "no_of_reviews": 765,
+    "image": "playstation_4_pro.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Nintendo Switch Lite",
+    "price": 199.99,
+    "discount": 0,
+    "category": "gaming",
+    "description": "Compact and lightweight gaming console for handheld gaming on-the-go.",
+    "ratings": 4.8,
+    "no_of_reviews": 543,
+    "image": "nintendo_switch_lite.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Xbox Series S",
+    "price": 299.99,
+    "discount": 20,
+    "category": "gaming",
+    "description": "Next-gen gaming console with all-digital experience and 1440p gaming.",
+    "ratings": 4.6,
+    "no_of_reviews": 432,
+    "image": "xbox_series_s.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Sony PlayStation VR",
+    "price": 299.99,
+    "discount": 0,
+    "category": "gaming",
+    "description": "Immersive virtual reality headset for PlayStation gaming experiences.",
+    "ratings": 4.5,
+    "no_of_reviews": 321,
+    "image": "playstation_vr.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Oculus Quest 2",
+    "price": 299.99,
+    "discount": 0,
+    "category": "gaming",
+    "description": "All-in-one VR gaming headset with high-resolution display and easy setup.",
+    "ratings": 4.7,
+    "no_of_reviews": 210,
+    "image": "oculus_quest_2.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Razer BlackWidow V3",
+    "price": 139.99,
+    "discount": 10,
+    "category": "gaming",
+    "description": "Mechanical gaming keyboard with customizable Chroma RGB lighting.",
+    "ratings": 4.6,
+    "no_of_reviews": 156,
+    "image": "razer_blackwidow_v3.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Logitech G502 HERO",
+    "price": 79.99,
+    "discount": 0,
+    "category": "gaming",
+    "description": "High-performance gaming mouse with advanced HERO sensor and customizable weights.",
+    "ratings": 4.8,
+    "no_of_reviews": 423,
+    "image": "logitech_g502_hero.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Sony WH-1000XM4",
+    "price": 349.99,
+    "discount": 50,
+    "category": "headphones",
+    "description": "Premium wireless headphones with industry-leading noise cancellation.",
+    "ratings": 4.9,
+    "no_of_reviews": 987,
+    "image": "sony_wh_1000xm4.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "AirPods Pro",
+    "price": 249.99,
+    "discount": 0,
+    "category": "headphones",
+    "description": "True wireless earbuds with active noise cancellation and transparency mode.",
+    "ratings": 4.8,
+    "no_of_reviews": 1234,
+    "image": "airpods_pro.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Bose QuietComfort 35 II",
+    "price": 299.99,
+    "discount": 20,
+    "category": "headphones",
+    "description": "Wireless headphones with renowned noise cancellation and balanced sound.",
+    "ratings": 4.7,
+    "no_of_reviews": 765,
+    "image": "bose_qc_35_ii.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Sennheiser HD 660 S",
+    "price": 499.99,
+    "discount": 0,
+    "category": "headphones",
+    "description": "Open-back headphones with high-resolution sound and comfortable design.",
+    "ratings": 4.8,
+    "no_of_reviews": 543,
+    "image": "sennheiser_hd_660_s.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Jabra Elite 85t",
+    "price": 229.99,
+    "discount": 30,
+    "category": "headphones",
+    "description": "True wireless earbuds with customizable ANC and long battery life.",
+    "ratings": 4.6,
+    "no_of_reviews": 432,
+    "image": "jabra_elite_85t.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Beats Studio Buds",
+    "price": 149.99,
+    "discount": 10,
+    "category": "headphones",
+    "description": "True wireless earbuds with powerful sound and sweat and water resistance.",
+    "ratings": 4.5,
+    "no_of_reviews": 321,
+    "image": "beats_studio_buds.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "AKG K371",
+    "price": 149.99,
+    "discount": 0,
+    "category": "headphones",
+    "description": "Studio headphones with accurate sound and comfortable over-ear design.",
+    "ratings": 4.6,
+    "no_of_reviews": 210,
+    "image": "akg_k371.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Anker Soundcore Liberty Air 2 Pro",
+    "price": 129.99,
+    "discount": 20,
+    "category": "headphones",
+    "description": "True wireless earbuds with targeted active noise cancellation and customizable EQ.",
+    "ratings": 4.4,
+    "no_of_reviews": 156,
+    "image": "soundcore_liberty_air_2_pro.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Shure AONIC 50",
+    "price": 399.99,
+    "discount": 0,
+    "category": "headphones",
+    "description": "Premium wireless headphones with adjustable noise cancellation and studio-quality sound.",
+    "ratings": 4.9,
+    "no_of_reviews": 623,
+    "image": "shure_aonic_50.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Skullcandy Indy ANC",
+    "price": 99.99,
+    "discount": 10,
+    "category": "headphones",
+    "description": "Affordable true wireless earbuds with active noise cancellation and rapid charge.",
+    "ratings": 4.3,
+    "no_of_reviews": 167,
+    "image": "skullcandy_indy_anc.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "iPhone 13 Pro",
+    "price": 999,
+    "description": "The iPhone 13 Pro features a ProMotion display, A15 Bionic chip, Pro camera system, and 5G capability.",
+    "ratings": 4.8,
+    "discount": 0,
+    "no_of_reviews": 1200,
+    "category": "phones",
+    "image": "/phones/iphone_13_pro.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Samsung Galaxy S21 Ultra",
+    "price": 1199,
+    "description": "The Samsung Galaxy S21 Ultra boasts a 108MP camera, 120Hz Dynamic AMOLED display, and powerful Exynos 2100 processor.",
+    "ratings": 4.7,
+    "discount": 50,
+    "no_of_reviews": 1500,
+    "category": "phones",
+    "image": "/phones/samsung_galaxy_s21_ultra.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Google Pixel 6 Pro",
+    "price": 899,
+    "description": "The Google Pixel 6 Pro features a Tensor chip for AI-enhanced photography, 120Hz OLED display, and 5G connectivity.",
+    "ratings": 4.6,
+    "discount": 0,
+    "no_of_reviews": 900,
+    "category": "phones",
+    "image": "/phones/google_pixel_6_pro.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "OnePlus 9 Pro",
+    "price": 969,
+    "description": "The OnePlus 9 Pro offers Hasselblad-tuned cameras, Snapdragon 888 processor, and a fluid AMOLED display with 120Hz refresh rate.",
+    "ratings": 4.5,
+    "discount": 20,
+    "no_of_reviews": 800,
+    "category": "phones",
+    "image": "/phones/oneplus_9_pro.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Xiaomi Mi 11 Ultra",
+    "price": 1099,
+    "description": "The Xiaomi Mi 11 Ultra features a massive 50MP camera, Snapdragon 888 processor, and a secondary display on the back.",
+    "ratings": 4.6,
+    "discount": 30,
+    "no_of_reviews": 1000,
+    "category": "phones",
+    "image": "/phones/xiaomi_mi_11_ultra.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Sony Xperia 1 III",
+    "price": 1299,
+    "description": "The Sony Xperia 1 III offers a 4K OLED display, Snapdragon 888 processor, and a versatile camera system with ZEISS optics.",
+    "ratings": 4.5,
+    "discount": 0,
+    "no_of_reviews": 700,
+    "category": "phones",
+    "image": "/phones/sony_xperia_1_iii.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Asus ROG Phone 5",
+    "price": 999,
+    "description": "The Asus ROG Phone 5 is a gaming powerhouse with Snapdragon 888 processor, 144Hz AMOLED display, and ultrasonic trigger buttons.",
+    "ratings": 4.7,
+    "discount": 0,
+    "no_of_reviews": 600,
+    "category": "phones",
+    "image": "/phones/asus_rog_phone_5.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Huawei P50 Pro",
+    "price": 1199,
+    "description": "The Huawei P50 Pro features a Leica quad-camera setup, Kirin 9000 processor, and a gorgeous OLED display.",
+    "ratings": 4.4,
+    "discount": 10,
+    "no_of_reviews": 850,
+    "category": "phones",
+    "image": "/phones/huawei_p50_pro.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Realme GT",
+    "price": 599,
+    "description": "The Realme GT offers flagship-level performance with Snapdragon 888 processor, 120Hz Super AMOLED display, and a sleek design.",
+    "ratings": 4.5,
+    "discount": 0,
+    "no_of_reviews": 500,
+    "category": "phones",
+    "image": "/phones/realme_gt.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Oppo Find X3 Pro",
+    "price": 1099,
+    "description": "The Oppo Find X3 Pro features a unique design, Snapdragon 888 processor, and a versatile camera system with microscope lens.",
+    "ratings": 4.4,
+    "discount": 15,
+    "no_of_reviews": 750,
+    "category": "phones",
+    "image": "/phones/oppo_find_x3_pro.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Motorola Edge+",
+    "price": 999,
+    "description": "The Motorola Edge+ offers a Snapdragon 888 processor, 108MP camera, and a 144Hz OLED display.",
+    "ratings": 4.3,
+    "discount": 0,
+    "no_of_reviews": 400,
+    "category": "phones",
+    "image": "/phones/motorola_edge_plus.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Vivo X60 Pro+",
+    "price": 899,
+    "description": "The Vivo X60 Pro+ features a Zeiss-tuned camera system, Snapdragon 888 processor, and a 120Hz AMOLED display.",
+    "ratings": 4.5,
+    "discount": 25,
+    "no_of_reviews": 600,
+    "category": "phones",
+    "image": "/phones/vivo_x60_pro_plus.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Nokia X20",
+    "price": 499,
+    "description": "The Nokia X20 offers a Snapdragon 480 processor, Zeiss optics cameras, and a sturdy build with a Nordic design.",
+    "ratings": 4.2,
+    "discount": 10,
+    "no_of_reviews": 300,
+    "category": "phones",
+    "image": "/phones/nokia_x20.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Lenovo Legion Phone Duel 2",
+    "price": 1099,
+    "description": "The Lenovo Legion Phone Duel 2 is a gaming-centric phone with Snapdragon 888 processor, dual cooling fans, and a 144Hz AMOLED display.",
+    "ratings": 4.6,
+    "discount": 0,
+    "no_of_reviews": 550,
+    "category": "phones",
+    "image": "/phones/lenovo_legion_phone_duel_2.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "LG Wing",
+    "price": 999,
+    "description": "The LG Wing features a unique swivel design, Snapdragon 765G processor, and a triple-camera setup with a gimbal mode.",
+    "ratings": 4.3,
+    "discount": 0,
+    "no_of_reviews": 400,
+    "category": "phones",
+    "image": "/phones/lg_wing.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+
+  {
+    "name": "Apple Watch Series 7",
+    "price": 399.99,
+    "discount": 20,
+    "category": "smartwatches",
+    "description": "Latest smartwatch from Apple with larger display and faster charging.",
+    "ratings": 4.8,
+    "no_of_reviews": 567,
+    "image": "apple_watch_series_7.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Samsung Galaxy Watch 4 Classic",
+    "price": 349.99,
+    "discount": 0,
+    "category": "smartwatches",
+    "description": "Premium smartwatch with rotating bezel and advanced health tracking features.",
+    "ratings": 4.7,
+    "no_of_reviews": 432,
+    "image": "galaxy_watch_4_classic.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Fitbit Versa 3",
+    "price": 229.99,
+    "discount": 30,
+    "category": "smartwatches",
+    "description": "Fitness-focused smartwatch with built-in GPS and heart rate monitoring.",
+    "ratings": 4.6,
+    "no_of_reviews": 189,
+    "image": "fitbit_versa_3.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Garmin Fenix 6 Pro",
+    "price": 599.99,
+    "discount": 0,
+    "category": "smartwatches",
+    "description": "Premium multisport GPS watch with rugged design and long battery life.",
+    "ratings": 4.9,
+    "no_of_reviews": 765,
+    "image": "garmin_fenix_6_pro.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Huawei Watch GT 2 Pro",
+    "price": 299.99,
+    "discount": 50,
+    "category": "smartwatches",
+    "description": "Stylish smartwatch with AMOLED display and up to 2 weeks of battery life.",
+    "ratings": 4.5,
+    "no_of_reviews": 243,
+    "image": "huawei_watch_gt_2_pro.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Fossil Gen 5",
+    "price": 279.99,
+    "discount": 0,
+    "category": "smartwatches",
+    "description": "Fashionable smartwatch with Wear OS by Google and customizable dials.",
+    "ratings": 4.7,
+    "no_of_reviews": 321,
+    "image": "fossil_gen_5.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "TicWatch Pro 3",
+    "price": 299.99,
+    "discount": 20,
+    "category": "smartwatches",
+    "description": "Dual-layer display smartwatch with long battery life and essential health tracking.",
+    "ratings": 4.6,
+    "no_of_reviews": 156,
+    "image": "ticwatch_pro_3.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Amazfit GTR 3",
+    "price": 199.99,
+    "discount": 10,
+    "category": "smartwatches",
+    "description": "Affordable smartwatch with AMOLED display and 24-day battery life.",
+    "ratings": 4.5,
+    "no_of_reviews": 98,
+    "image": "amazfit_gtr_3.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Mobvoi TicWatch E3",
+    "price": 199.99,
+    "discount": 0,
+    "category": "smartwatches",
+    "description": "Budget-friendly smartwatch with Wear OS by Google and built-in GPS.",
+    "ratings": 4.4,
+    "no_of_reviews": 210,
+    "image": "ticwatch_e3.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  },
+  {
+    "name": "Xiaomi Mi Watch Revolve",
+    "price": 179.99,
+    "discount": 30,
+    "category": "smartwatches",
+    "description": "Feature-packed smartwatch with SpO2 tracking and long-lasting battery.",
+    "ratings": 4.3,
+    "no_of_reviews": 167,
+    "image": "mi_watch_revolve.jpg",
+    "sold_by": [
+      "662ccf835fe0727b5c51abce",
+      "662ccfeb5fe0727b5c51abcf",
+      "662ccff35fe0727b5c51abd0",
+      "662ccff95fe0727b5c51abd1",
+      "662ccfff5fe0727b5c51abd2",
+      "662cd0065fe0727b5c51abd3"
+    ]
+  }
+]

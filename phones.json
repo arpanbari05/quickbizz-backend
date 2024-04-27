@@ -7,7 +7,15 @@
     "discount": 0,
     "no_of_reviews": 1200,
     "category": "phones",
-    "image": "/phones/iphone_13_pro.jpg"
+    "image": "/phones/iphone_13_pro.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Samsung Galaxy S21 Ultra",
@@ -17,7 +25,15 @@
     "discount": 50,
     "no_of_reviews": 1500,
     "category": "phones",
-    "image": "/phones/samsung_galaxy_s21_ultra.jpg"
+    "image": "/phones/samsung_galaxy_s21_ultra.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Google Pixel 6 Pro",
@@ -27,7 +43,15 @@
     "discount": 0,
     "no_of_reviews": 900,
     "category": "phones",
-    "image": "/phones/google_pixel_6_pro.jpg"
+    "image": "/phones/google_pixel_6_pro.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "OnePlus 9 Pro",
@@ -37,7 +61,15 @@
     "discount": 20,
     "no_of_reviews": 800,
     "category": "phones",
-    "image": "/phones/oneplus_9_pro.jpg"
+    "image": "/phones/oneplus_9_pro.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Xiaomi Mi 11 Ultra",
@@ -47,7 +79,15 @@
     "discount": 30,
     "no_of_reviews": 1000,
     "category": "phones",
-    "image": "/phones/xiaomi_mi_11_ultra.jpg"
+    "image": "/phones/xiaomi_mi_11_ultra.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Sony Xperia 1 III",
@@ -57,7 +97,15 @@
     "discount": 0,
     "no_of_reviews": 700,
     "category": "phones",
-    "image": "/phones/sony_xperia_1_iii.jpg"
+    "image": "/phones/sony_xperia_1_iii.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Asus ROG Phone 5",
@@ -67,7 +115,15 @@
     "discount": 0,
     "no_of_reviews": 600,
     "category": "phones",
-    "image": "/phones/asus_rog_phone_5.jpg"
+    "image": "/phones/asus_rog_phone_5.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Huawei P50 Pro",
@@ -77,7 +133,15 @@
     "discount": 10,
     "no_of_reviews": 850,
     "category": "phones",
-    "image": "/phones/huawei_p50_pro.jpg"
+    "image": "/phones/huawei_p50_pro.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Realme GT",
@@ -87,7 +151,15 @@
     "discount": 0,
     "no_of_reviews": 500,
     "category": "phones",
-    "image": "/phones/realme_gt.jpg"
+    "image": "/phones/realme_gt.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Oppo Find X3 Pro",
@@ -97,7 +169,15 @@
     "discount": 15,
     "no_of_reviews": 750,
     "category": "phones",
-    "image": "/phones/oppo_find_x3_pro.jpg"
+    "image": "/phones/oppo_find_x3_pro.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Motorola Edge+",
@@ -107,7 +187,15 @@
     "discount": 0,
     "no_of_reviews": 400,
     "category": "phones",
-    "image": "/phones/motorola_edge_plus.jpg"
+    "image": "/phones/motorola_edge_plus.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Vivo X60 Pro+",
@@ -117,7 +205,15 @@
     "discount": 25,
     "no_of_reviews": 600,
     "category": "phones",
-    "image": "/phones/vivo_x60_pro_plus.jpg"
+    "image": "/phones/vivo_x60_pro_plus.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Nokia X20",
@@ -127,7 +223,15 @@
     "discount": 10,
     "no_of_reviews": 300,
     "category": "phones",
-    "image": "/phones/nokia_x20.jpg"
+    "image": "/phones/nokia_x20.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Lenovo Legion Phone Duel 2",
@@ -137,7 +241,15 @@
     "discount": 0,
     "no_of_reviews": 550,
     "category": "phones",
-    "image": "/phones/lenovo_legion_phone_duel_2.jpg"
+    "image": "/phones/lenovo_legion_phone_duel_2.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "LG Wing",
@@ -147,7 +259,15 @@
     "discount": 0,
     "no_of_reviews": 400,
     "category": "phones",
-    "image": "/phones/lg_wing.jpg"
+    "image": "/phones/lg_wing.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   }
   
 ]

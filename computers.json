@@ -7,7 +7,15 @@
     "description": "Powerful laptop with stunning 4K OLED display and top-notch performance.",
     "ratings": 4.8,
     "no_of_reviews": 256,
-    "image": "dell_xps_15.jpg"
+    "image": "dell_xps_15.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Apple MacBook Pro",
@@ -17,7 +25,15 @@
     "description": "Sleek and powerful laptop for professionals, featuring the latest M1 chip.",
     "ratings": 4.9,
     "no_of_reviews": 312,
-    "image": "macbook_pro.jpg"
+    "image": "macbook_pro.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Lenovo ThinkPad X1 Carbon",
@@ -27,7 +43,15 @@
     "description": "Ultra-light and durable business laptop with impressive battery life.",
     "ratings": 4.7,
     "no_of_reviews": 189,
-    "image": "thinkpad_x1_carbon.jpg"
+    "image": "thinkpad_x1_carbon.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Microsoft Surface Laptop 4",
@@ -37,7 +61,15 @@
     "description": "Elegant and versatile laptop with touchscreen and powerful performance.",
     "ratings": 4.6,
     "no_of_reviews": 425,
-    "image": "surface_laptop_4.jpg"
+    "image": "surface_laptop_4.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "HP Spectre x360",
@@ -47,7 +79,15 @@
     "description": "Convertible laptop with stunning design and long battery life.",
     "ratings": 4.5,
     "no_of_reviews": 278,
-    "image": "hp_spectre_x360.jpg"
+    "image": "hp_spectre_x360.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Asus ROG Zephyrus G14",
@@ -57,7 +97,15 @@
     "description": "Powerful gaming laptop with AMD Ryzen 9 processor and RTX 3060 graphics.",
     "ratings": 4.8,
     "no_of_reviews": 342,
-    "image": "rog_zephyrus_g14.jpg"
+    "image": "rog_zephyrus_g14.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Razer Blade 15",
@@ -67,7 +115,15 @@
     "description": "High-performance gaming laptop with customizable RGB lighting.",
     "ratings": 4.7,
     "no_of_reviews": 496,
-    "image": "razer_blade_15.jpg"
+    "image": "razer_blade_15.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Acer Predator Helios 300",
@@ -77,7 +133,15 @@
     "description": "Affordable gaming laptop with 144Hz display and GTX 1660 Ti graphics.",
     "ratings": 4.6,
     "no_of_reviews": 567,
-    "image": "predator_helios_300.jpg"
+    "image": "predator_helios_300.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Alienware Area-51m",
@@ -87,7 +151,15 @@
     "description": "Desktop replacement gaming laptop with desktop-grade CPU and GPU options.",
     "ratings": 4.9,
     "no_of_reviews": 623,
-    "image": "alienware_area_51m.jpg"
+    "image": "alienware_area_51m.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "LG Gram 17",
@@ -97,6 +169,14 @@
     "description": "Ultra-lightweight laptop with long-lasting battery and large 17-inch display.",
     "ratings": 4.7,
     "no_of_reviews": 398,
-    "image": "lg_gram_17.jpg"
+    "image": "lg_gram_17.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   }
 ]

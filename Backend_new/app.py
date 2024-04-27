@@ -49,15 +49,28 @@ def get_products_in_category(category):
 # Search route
 @app.route('/search', methods=['GET'])
 def search_products():
-    query = request.args.get('q')
-    #Creating a case-insensitive regex to facilitate partial name search
-    regex = Regex(".*" + query + ".*", "i")
-    products = list(mongo.db.products.find({"name": {"$regex": regex}}))
-    
+    query = request.args.get('query')
+
+    if not query:
+        return jsonify({'error': 'Query parameter "query" is required'}), 400
+
+    # Construct a MongoDB query to search for products
+    search_query = {
+        '$or': [
+            {'name': {'$regex': query, '$options': 'i'}},
+            {'category': {'$regex': query, '$options': 'i'}}
+        ]
+    }
+
+    products = list(mongo.db.products.find(search_query))
+
+    # Convert ObjectId to str for serialization
     for product in products:
         product['_id'] = str(product['_id'])
-        
+
     return jsonify(products), 200
+
+
 
 # User signup route
 @app.route('/signup', methods=['POST'])
@@ -134,6 +147,7 @@ def create_product():
     description = data.get('description')
     category = data.get('category')
     image = data.get('image')
+    sold_by = data.get('sold_by')
 
     if name and price:
         product_data = {
@@ -144,6 +158,7 @@ def create_product():
             'description': description,
             'category': category,
             'image': image,
+            'sold_by':sold_by,
         }
         result = mongo.db.products.insert_one(product_data)
         return jsonify({'message': 'Product created successfully', 'product_id': str(result.inserted_id)}), 201
@@ -178,6 +193,7 @@ def update_product(product_id):
     description = data.get('description')
     category = data.get('category')
     image = data.get('image')
+    sold_by = data.get('sold_by')
 
     if name or price or ratings or number_of_reviews or description:
         update_data = {}
@@ -195,6 +211,8 @@ def update_product(product_id):
             update_data['category'] = category
         if image:
             update_data['image'] = image
+        if sold_by:
+            update_data['sold_by'] = sold_by
         result = mongo.db.products.update_one({'_id': ObjectId(product_id)}, {'$set': update_data})
         if result.modified_count > 0:
             return jsonify({'message': 'Product updated successfully'}), 200
@@ -339,6 +357,7 @@ def add_to_cart():
     data = request.json
     product_id = data.get('product_id')
     user_id = data.get('user_id') 
+    seller = data.get('seller')
     quantity = data.get('quantity') or 1
 
     # Check if product exists
@@ -360,7 +379,8 @@ def add_to_cart():
         'user_id': user_id,
         'product': product,
         'quantity': quantity,  # Default quantity is 1
-        'total_price': total_price
+        'total_price': total_price,
+        'seller': seller
     }
 
     # Insert item into the cart
@@ -383,6 +403,7 @@ def find_cart_items(user_id):
         product = item['product']
         product['quantity'] = item['quantity']
         product['_id'] = str(product['_id'])
+        product['seller'] = item['seller']
         formatted_cart_items.append(product)
 
     return jsonify({'cart_items': formatted_cart_items, 'total_price': total_price}), 200

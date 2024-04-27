@@ -7,7 +7,15 @@
     "description": "Premium wireless headphones with industry-leading noise cancellation.",
     "ratings": 4.9,
     "no_of_reviews": 987,
-    "image": "sony_wh_1000xm4.jpg"
+    "image": "sony_wh_1000xm4.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "AirPods Pro",
@@ -17,7 +25,15 @@
     "description": "True wireless earbuds with active noise cancellation and transparency mode.",
     "ratings": 4.8,
     "no_of_reviews": 1234,
-    "image": "airpods_pro.jpg"
+    "image": "airpods_pro.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Bose QuietComfort 35 II",
@@ -27,7 +43,15 @@
     "description": "Wireless headphones with renowned noise cancellation and balanced sound.",
     "ratings": 4.7,
     "no_of_reviews": 765,
-    "image": "bose_qc_35_ii.jpg"
+    "image": "bose_qc_35_ii.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Sennheiser HD 660 S",
@@ -37,7 +61,15 @@
     "description": "Open-back headphones with high-resolution sound and comfortable design.",
     "ratings": 4.8,
     "no_of_reviews": 543,
-    "image": "sennheiser_hd_660_s.jpg"
+    "image": "sennheiser_hd_660_s.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Jabra Elite 85t",
@@ -47,7 +79,15 @@
     "description": "True wireless earbuds with customizable ANC and long battery life.",
     "ratings": 4.6,
     "no_of_reviews": 432,
-    "image": "jabra_elite_85t.jpg"
+    "image": "jabra_elite_85t.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Beats Studio Buds",
@@ -57,7 +97,15 @@
     "description": "True wireless earbuds with powerful sound and sweat and water resistance.",
     "ratings": 4.5,
     "no_of_reviews": 321,
-    "image": "beats_studio_buds.jpg"
+    "image": "beats_studio_buds.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "AKG K371",
@@ -67,7 +115,15 @@
     "description": "Studio headphones with accurate sound and comfortable over-ear design.",
     "ratings": 4.6,
     "no_of_reviews": 210,
-    "image": "akg_k371.jpg"
+    "image": "akg_k371.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Anker Soundcore Liberty Air 2 Pro",
@@ -77,7 +133,15 @@
     "description": "True wireless earbuds with targeted active noise cancellation and customizable EQ.",
     "ratings": 4.4,
     "no_of_reviews": 156,
-    "image": "soundcore_liberty_air_2_pro.jpg"
+    "image": "soundcore_liberty_air_2_pro.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Shure AONIC 50",
@@ -87,7 +151,15 @@
     "description": "Premium wireless headphones with adjustable noise cancellation and studio-quality sound.",
     "ratings": 4.9,
     "no_of_reviews": 623,
-    "image": "shure_aonic_50.jpg"
+    "image": "shure_aonic_50.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   },
   {
     "name": "Skullcandy Indy ANC",
@@ -97,6 +169,14 @@
     "description": "Affordable true wireless earbuds with active noise cancellation and rapid charge.",
     "ratings": 4.3,
     "no_of_reviews": 167,
-    "image": "skullcandy_indy_anc.jpg"
+    "image": "skullcandy_indy_anc.jpg",
+    "sold_by": [
+      "662cc4440db6d146166803a6",
+      "662cc45a0db6d146166803a7",
+      "662cc4660db6d146166803a8",
+      "662cc4750db6d146166803a9",
+      "662cc4800db6d146166803aa",
+      "662cc48f0db6d146166803ab"
+    ]
   }
 ]
