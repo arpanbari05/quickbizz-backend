@@ -12,34 +12,36 @@ from flask_pymongo import PyMongo
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # Change this to a random secret key
 
+# uri = "mongodb+srv://arpanbari05:<password>@cluster0.gfggbs6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
-# uri = "mongodb+srv://arpanbari05:Sachin10@cluster0.gfggbs6.mongodb.net/QuickBizz?retryWrites=true&w=majority"
-# # Create a new client and connect to the server
-# client = MongoClient(uri)
+uri = "mongodb+srv://arpanbari05:Sachin10@cluster0.gfggbs6.mongodb.net/QuickBizz?retryWrites=true&w=majority&appName=Cluster0"
+# Create a new client and connect to the server
+client = MongoClient(uri)
 
-# # Create a new client and connect to the server
-# mongo = MongoClient(uri, server_api=ServerApi('1'))
-# # Send a ping to confirm a successful connection
-# try:
-#     client.admin.command('ping')
-#     print("Pinged your deployment. You successfully connected to MongoDB!")
-# except Exception as e:
-#     print(e)
+# Create a new client and connect to the server
+mongo = MongoClient(uri, server_api=ServerApi('1'))
+db = mongo.QuickBizz
+# Send a ping to confirm a successful connection
+try:
+    client.admin.command('ping')
+    print("Pinged your deployment. You successfully connected to MongoDB!")
+except Exception as e:
+    print(e)
 
-app.config['MONGO_URI'] = 'mongodb://localhost:27017/QuickBizz'  # Update with your MongoDB URI
-mongo = PyMongo(app)
+# app.config['MONGO_URI'] = 'mongodb://localhost:27017/QuickBizz'  # Update with your MongoDB URI
+# mongo = PyMongo(app)
 
 CORS(app)
 
 # Categories route
 @app.route('/categories', methods=['GET'])
 def get_all_categories():
-    categories = mongo.db.products.distinct("category")
+    categories = db.products.distinct("category")
     return jsonify(categories), 200
 
 @app.route('/categories/<category>', methods=['GET'])
 def get_products_in_category(category):
-    products = list(mongo.db.products.find({'category': category}))
+    products = list(db.products.find({'category': category}))
     
     for product in products:
         product['_id'] = str(product['_id'])
@@ -62,7 +64,7 @@ def search_products():
         ]
     }
 
-    products = list(mongo.db.products.find(search_query))
+    products = list(db.products.find(search_query))
 
     # Convert ObjectId to str for serialization
     for product in products:
@@ -87,7 +89,7 @@ def signup():
         return jsonify({'error': 'Invalid email or phone format'}), 400
 
     # Check if user with the given email or phone already exists
-    existing_user = mongo.db.users.find_one({'$or': [{'email': email_or_phone}, {'phone': email_or_phone}]})
+    existing_user = db.users.find_one({'$or': [{'email': email_or_phone}, {'phone': email_or_phone}]})
     if existing_user:
         return jsonify({'error': 'User already exists'}), 400
 
@@ -105,7 +107,7 @@ def signup():
     }
 
     # Insert user into the database
-    result = mongo.db.users.insert_one(user_data)
+    result = db.users.insert_one(user_data)
 
     return jsonify({'message': 'User created successfully', 'user_id': str(result.inserted_id)}), 201
 
@@ -117,7 +119,7 @@ def login():
     password = data.get('password')
 
     # Check if user exists
-    user = mongo.db.users.find_one({'$or': [{'email': email_or_phone}, {'phone': email_or_phone}]})
+    user = db.users.find_one({'$or': [{'email': email_or_phone}, {'phone': email_or_phone}]})
     if not user:
         return jsonify({'error': 'Invalid email/phone or password'}), 401
 
@@ -160,7 +162,7 @@ def create_product():
             'image': image,
             'sold_by': sold_by,
         }
-        result = mongo.db.products.insert_one(product_data)
+        result = db.products.insert_one(product_data)
         return jsonify({'message': 'Product created successfully', 'product_id': str(result.inserted_id)}), 201
     else:
         return jsonify({'error': 'Name and price are required fields'}), 400
@@ -168,7 +170,7 @@ def create_product():
 # Read (Retrieve Products)
 @app.route('/products', methods=['GET'])
 def get_all_products():
-    products = list(mongo.db.products.find())
+    products = list(db.products.find())
     
     for product in products:
         product['_id'] = str(product['_id'])
@@ -177,7 +179,7 @@ def get_all_products():
 
 @app.route('/products/<string:product_id>', methods=['GET'])
 def get_product(product_id):
-    product = mongo.db.products.find_one_or_404({'_id': ObjectId(product_id)})
+    product = db.products.find_one({'_id': ObjectId(product_id)})
     if product:
             product['_id'] = str(product['_id'])
             return jsonify(product), 200
@@ -213,7 +215,7 @@ def update_product(product_id):
             update_data['image'] = image
         if sold_by:
             update_data['sold_by'] = sold_by
-        result = mongo.db.products.update_one({'_id': ObjectId(product_id)}, {'$set': update_data})
+        result = db.products.update_one({'_id': ObjectId(product_id)}, {'$set': update_data})
         if result.modified_count > 0:
             return jsonify({'message': 'Product updated successfully'}), 200
         else:
@@ -224,7 +226,7 @@ def update_product(product_id):
 # Delete (Remove a Product)
 @app.route('/products/<string:product_id>', methods=['DELETE'])
 def delete_product(product_id):
-    result = mongo.db.products.delete_one({'_id': ObjectId(product_id)})
+    result = db.products.delete_one({'_id': ObjectId(product_id)})
     if result.deleted_count > 0:
         return jsonify({'message': 'Product deleted successfully'}), 200
     else:
@@ -240,7 +242,7 @@ def update_sold_by(product_id):
         return jsonify({'error': 'Seller information is required in the request body'}), 400
 
     # Check if the product exists
-    product = mongo.db.products.find_one({'_id': ObjectId(product_id)})
+    product = db.products.find_one({'_id': ObjectId(product_id)})
     if not product:
         return jsonify({'error': 'Product not found'}), 404
 
@@ -249,7 +251,7 @@ def update_sold_by(product_id):
     sold_by_list.append(seller)
 
     # Update the product document with the new sold_by list
-    mongo.db.products.update_one({'_id': ObjectId(product_id)}, {'$set': {'sold_by': sold_by_list}})
+    db.products.update_one({'_id': ObjectId(product_id)}, {'$set': {'sold_by': sold_by_list}})
 
     return jsonify({'message': 'Sold_by field updated successfully'}), 200
 
@@ -269,13 +271,13 @@ def add_to_wishlist():
         return jsonify({'error': 'Invalid product_id format'}), 400
 
     # Check if product exists
-    product = mongo.db.products.find_one({'_id': product_id})
+    product = db.products.find_one({'_id': product_id})
     if not product:
         return jsonify({'error': 'Product not found'}), 404
     
 
     # Check if the product is already in the user's wishlist
-    existing_wishlist_item = mongo.db.wishlist.find_one({'product_id': product_id, 'user_id': user_id})
+    existing_wishlist_item = db.wishlist.find_one({'product_id': product_id, 'user_id': user_id})
     if existing_wishlist_item:
         return jsonify({'error': 'Product already in wishlist'}), 400
 
@@ -284,7 +286,7 @@ def add_to_wishlist():
         'product_id': product_id,
         'user_id': user_id
     }
-    mongo.db.wishlist.insert_one(wishlist_item)
+    db.wishlist.insert_one(wishlist_item)
 
     return jsonify({'message': 'Product added to wishlist'}), 201
 
@@ -293,13 +295,13 @@ def add_to_wishlist():
 def get_wishlist(user_id):
 
     # Retrieve items from the user's wishlist
-    wishlist_items = list(mongo.db.wishlist.find({'user_id': ObjectId(user_id)}))
+    wishlist_items = list(db.wishlist.find({'user_id': ObjectId(user_id)}))
 
     # Get product details for each wishlist item
     products_in_wishlist = []
     for item in wishlist_items:
         product_id = ObjectId(item['product_id'])
-        product = mongo.db.products.find_one({'_id': product_id})
+        product = db.products.find_one({'_id': product_id})
         if product:
              # Convert ObjectId to string for serialization
             product['_id'] = str(product['_id'])
@@ -318,7 +320,7 @@ def remove_product_from_wishlist():
         return jsonify({'error': 'Missing user_id or product_id parameter'}), 400
 
     # Remove product from wishlist
-    result = mongo.db.wishlist.delete_one({'user_id': ObjectId(user_id), 'product_id': ObjectId(product_id)})
+    result = db.wishlist.delete_one({'user_id': ObjectId(user_id), 'product_id': ObjectId(product_id)})
     if result.deleted_count > 0:
         return jsonify({'message': 'Product removed from wishlist'}), 200
     else:
@@ -331,17 +333,17 @@ def find_wishlisted_products():
     user_email = request.args.get('user_email')
 
     # Check if user exists
-    user = mongo.db.users.find_one({'email': user_email})
+    user = db.users.find_one({'email': user_email})
     if not user:
         return jsonify({'error': 'User not found'}), 404
 
     # Retrieve wishlisted products for the user
-    wishlist_items = list(mongo.db.wishlist.find({'user_id': str(user['_id'])}))
+    wishlist_items = list(db.wishlist.find({'user_id': str(user['_id'])}))
 
     # Get product details for each wishlisted item
     wishlisted_products = []
     for item in wishlist_items:
-        product = mongo.db.products.find_one({'_id': item['product_id']})
+        product = db.products.find_one({'_id': item['product_id']})
         if product:
             wishlisted_products.append(product)
 
@@ -365,8 +367,8 @@ def check_product_wishlist():
     #     return jsonify({'error': 'Invalid user_id or product_id format'}), 400
 
     # Check if product is wishlisted for the user
-    print(list(mongo.db.wishlist.find()))
-    wishlist_item = mongo.db.wishlist.find_one({'user_id': ObjectId(user_id), 'product_id': ObjectId(product_id)})
+    print(list(db.wishlist.find()))
+    wishlist_item = db.wishlist.find_one({'user_id': ObjectId(user_id), 'product_id': ObjectId(product_id)})
     if wishlist_item:
         return jsonify({'wishlist_status': True}), 200
     else:
@@ -383,12 +385,12 @@ def add_to_cart():
     quantity = data.get('quantity') or 1
 
     # Check if product exists
-    product = mongo.db.products.find_one({'_id': ObjectId(product_id)})
+    product = db.products.find_one({'_id': ObjectId(product_id)})
     if not product:
         return jsonify({'error': 'Product not found'}), 404
 
     # Check if the product is already in the user's cart
-    existing_cart_item = mongo.db.cart.find_one({'product_id': product_id, 'user_id': user_id})
+    existing_cart_item = db.cart.find_one({'product_id': product_id, 'user_id': user_id})
     if existing_cart_item:
         return jsonify({'error': 'Product already in cart'}), 400
 
@@ -406,7 +408,7 @@ def add_to_cart():
     }
 
     # Insert item into the cart
-    mongo.db.cart.insert_one(cart_item)
+    db.cart.insert_one(cart_item)
 
     return jsonify({'message': 'Product added to cart', 'total_price': total_price}), 201
 
@@ -414,7 +416,7 @@ def add_to_cart():
 @app.route('/cart/<string:user_id>', methods=['GET'])
 def find_cart_items(user_id):
     # Retrieve cart items for the user
-    cart_items = list(mongo.db.cart.find({'user_id': user_id}))
+    cart_items = list(db.cart.find({'user_id': user_id}))
 
     # Calculate total price of all products in the cart
     total_price = sum(item['product']['price'] * item['quantity'] for item in cart_items)
@@ -434,7 +436,7 @@ def find_cart_items(user_id):
 # Route to delete cart based on user ID
 @app.route('/cart/<string:user_id>', methods=['DELETE'])
 def delete_cart_by_user_id(user_id):
-    result = mongo.db.cart.delete_many({'user_id': user_id})
+    result = db.cart.delete_many({'user_id': user_id})
     if result.deleted_count > 0:
         return jsonify({'message': 'Cart deleted successfully'}), 200
     else:
@@ -464,7 +466,7 @@ def update_account():
         new_data['phone'] = email_or_phone if re.match(r'^\+?\d{10,}$', email_or_phone) else None
 
     # Update user information
-    result = mongo.db.users.update_one({'_id': ObjectId(user_id)}, {'$set': new_data})
+    result = db.users.update_one({'_id': ObjectId(user_id)}, {'$set': new_data})
     if result.modified_count > 0:
         return jsonify({'message': 'Account information updated successfully'}), 200
     else:
@@ -484,7 +486,7 @@ def change_password():
         return jsonify({'error': 'New password and confirm new password do not match'}), 400
 
     # Check if user exists
-    user = mongo.db.users.find_one({'_id': ObjectId(user_id)})
+    user = db.users.find_one({'_id': ObjectId(user_id)})
     if not user:
         return jsonify({'error': 'User not found'}), 404
 
@@ -496,7 +498,7 @@ def change_password():
     hashed_new_password = generate_password_hash(new_password)
 
     # Update user's password
-    result = mongo.db.users.update_one({'_id': ObjectId(user_id)}, {'$set': {'password': hashed_new_password}})
+    result = db.users.update_one({'_id': ObjectId(user_id)}, {'$set': {'password': hashed_new_password}})
     if result.modified_count > 0:
         return jsonify({'message': 'Password changed successfully'}), 200
     else:
@@ -506,7 +508,7 @@ def change_password():
 @app.route('/user/<string:user_id>', methods=['GET'])
 def get_user(user_id):
     print(user_id)
-    user = mongo.db.users.find_one({'_id': ObjectId(user_id)})
+    user = db.users.find_one({'_id': ObjectId(user_id)})
     if user:
         # Remove the password field from the response
         user.pop('password', None)
@@ -518,7 +520,7 @@ def get_user(user_id):
 # Get all users route
 @app.route('/users', methods=['GET'])
 def get_all_users():
-    users = list(mongo.db.users.find({}, {'password': 0}))  # Exclude password field
+    users = list(db.users.find({}, {'password': 0}))  # Exclude password field
     
     for user in users:
         user['_id'] = str(user['_id'])
@@ -557,7 +559,7 @@ def add_order():
     }
 
     # Insert order into the database
-    result = mongo.db.orders.insert_one(order_data)
+    result = db.orders.insert_one(order_data)
 
     return jsonify({'message': 'Order added successfully', 'order_id': str(result.inserted_id)}), 201
 
@@ -565,7 +567,7 @@ def add_order():
 # Route to get orders by user ID
 @app.route('/orders/<string:user_id>', methods=['GET'])
 def get_orders_by_user_id(user_id):
-    orders = list(mongo.db.orders.find({'user_id': ObjectId(user_id)}))
+    orders = list(db.orders.find({'user_id': ObjectId(user_id)}))
 
     # Convert ObjectId to str for serialization
     for order in orders:
@@ -577,7 +579,7 @@ def get_orders_by_user_id(user_id):
 # Sales route
 @app.route('/sales', methods=['GET'])
 def get_products_on_sale():
-    products = list(mongo.db.products.find({'price': {'$lt': 1000}}))
+    products = list(db.products.find({'price': {'$lt': 1000}}))
 
     # Convert ObjectId to str for serialization
     for product in products:
@@ -590,7 +592,7 @@ def get_products_on_sale():
 @app.route('/best-selling', methods=['GET'])
 def get_best_selling_products():
     # Find products with reviews greater than 4.5
-    best_selling_products = list(mongo.db.products.find({'ratings': {'$gt': 4.5}}))
+    best_selling_products = list(db.products.find({'ratings': {'$gt': 4.5}}))
 
     # Convert ObjectId to str for serialization
     for product in best_selling_products:
@@ -601,7 +603,7 @@ def get_best_selling_products():
 # Route to get products by category
 @app.route('/products/category/<string:category>', methods=['GET'])
 def get_products_by_category(category):
-    products = list(mongo.db.products.find({'category': category}))
+    products = list(db.products.find({'category': category}))
 
     # Convert ObjectId to str for serialization
     for product in products:
