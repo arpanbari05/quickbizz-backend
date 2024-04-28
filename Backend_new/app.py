@@ -158,7 +158,7 @@ def create_product():
             'description': description,
             'category': category,
             'image': image,
-            'sold_by':sold_by,
+            'sold_by': sold_by,
         }
         result = mongo.db.products.insert_one(product_data)
         return jsonify({'message': 'Product created successfully', 'product_id': str(result.inserted_id)}), 201
@@ -230,6 +230,28 @@ def delete_product(product_id):
     else:
         return jsonify({'error': 'Product not found'}), 404
 
+
+# Route to update the sold_by field of a product
+@app.route('/products/update/sold_by/<string:product_id>', methods=['PUT'])
+def update_sold_by(product_id):
+    seller = request.json.get('seller')
+
+    if not seller:
+        return jsonify({'error': 'Seller information is required in the request body'}), 400
+
+    # Check if the product exists
+    product = mongo.db.products.find_one({'_id': ObjectId(product_id)})
+    if not product:
+        return jsonify({'error': 'Product not found'}), 404
+
+    # Add the seller to the sold_by list
+    sold_by_list = product.get('sold_by', [])
+    sold_by_list.append(seller)
+
+    # Update the product document with the new sold_by list
+    mongo.db.products.update_one({'_id': ObjectId(product_id)}, {'$set': {'sold_by': sold_by_list}})
+
+    return jsonify({'message': 'Sold_by field updated successfully'}), 200
 
 
 # Create (Add an item to Wishlist)
