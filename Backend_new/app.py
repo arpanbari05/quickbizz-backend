@@ -1,5 +1,9 @@
+from dotenv import load_dotenv
+# Load environment variables from .env file
+load_dotenv()
+
 from datetime import datetime
-from flask import Flask, request, jsonify, session
+from flask import Flask, request, jsonify, session, render_template
 from werkzeug.security import generate_password_hash, check_password_hash
 import re
 from bson import ObjectId
@@ -8,10 +12,19 @@ from flask_cors import CORS
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 from flask_pymongo import PyMongo
+import cloudinary
+from cloudinary import CloudinaryImage, uploader
+import os
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # Change this to a random secret key
 
+# Configure Cloudinary
+cloudinary.config(
+    cloud_name=os.getenv('CLOUDINARY_CLOUD_NAME'),
+    api_key=os.getenv('CLOUDINARY_API_KEY'),
+    api_secret=os.getenv('CLOUDINARY_API_SECRET')
+)
 
 # uri = "mongodb+srv://arpanbari05:Sachin10@cluster0.gfggbs6.mongodb.net/QuickBizz?retryWrites=true&w=majority"
 # # Create a new client and connect to the server
@@ -130,25 +143,32 @@ def create_product():
     name = data.get('name')
     price = data.get('price')
     ratings = data.get('ratings')
-    number_of_reviews = data.get('number_of_reviews')
+    discount = data.get('discount')
+    no_of_reviews = data.get('no_of_reviews')
     description = data.get('description')
     category = data.get('category')
     image = data.get('image')
+
+    # Upload the image to Cloudinary
+    cloudinary_response = uploader.upload(image, folder=category, public_id=name)
+
 
     if name and price:
         product_data = {
             'name': name,
             'price': price,
             'ratings': ratings,
-            'number_of_reviews': number_of_reviews,
+            'discount': discount,
+            'no_of_reviews': no_of_reviews,
             'description': description,
             'category': category,
-            'image': image,
+            'image': cloudinary_response['secure_url'],  # Use the secure URL provided by Cloudinary
         }
         result = mongo.db.products.insert_one(product_data)
         return jsonify({'message': 'Product created successfully', 'product_id': str(result.inserted_id)}), 201
     else:
         return jsonify({'error': 'Name and price are required fields'}), 400
+
 
 # Read (Retrieve Products)
 @app.route('/products', methods=['GET'])
