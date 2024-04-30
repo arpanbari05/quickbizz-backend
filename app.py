@@ -611,6 +611,113 @@ def get_products_by_category(category):
 
     return jsonify(products), 200
 
+# Route to send a message
+@app.route('/chat/send', methods=['POST'])
+def send_message():
+    data = request.json
+    sender_id = data.get('sender_id')
+    receiver_id = data.get('receiver_id')
+    message = data.get('message')
+
+    # Validate input
+    if not (sender_id and receiver_id and message):
+        return jsonify({'error': 'Missing required fields'}), 400
+
+    # Create message document
+    message_data = {
+        'sender_id': ObjectId(sender_id),
+        'receiver_id': ObjectId(receiver_id),
+        'message': message,
+        'timestamp': datetime.utcnow()
+    }
+
+    # Insert message into the database
+    result = db.messages.insert_one(message_data)
+
+    return jsonify({'message': 'Message sent successfully', 'message_id': str(result.inserted_id)}), 201
+
+
+# Route to get messages between two users
+@app.route('/chat/<string:user_id>/<string:other_user_id>', methods=['GET'])
+def get_messages(user_id, other_user_id):
+    # Find messages between two users
+    messages = list(db.messages.find({
+        '$or': [
+            {'sender_id': ObjectId(user_id), 'receiver_id': ObjectId(other_user_id)},
+            {'sender_id': ObjectId(other_user_id), 'receiver_id': ObjectId(user_id)}
+        ]
+    }).sort([('timestamp', 1)]))
+
+    # Convert ObjectId to str for serialization
+    for message in messages:
+        message['_id'] = str(message['_id'])
+        message['sender_id'] = str(message['sender_id'])
+        message['receiver_id'] = str(message['receiver_id'])
+
+    return jsonify(messages), 200
+
+# Route to fetch recent users
+@app.route('/chat/recent-users/<string:user_id>', methods=['GET'])
+def get_recent_users(user_id):
+    try:
+        # Query to fetch recent users from messages
+        recent_users_from_messages_cursor = db.messages.aggregate([
+            {'$match': {'$or': [{'sender_id': ObjectId(user_id)}, {'receiver_id': ObjectId(user_id)}]}},
+            {'$group': {'_id': {'$cond': [{'$eq': ['$sender_id', ObjectId(user_id)]}, '$receiver_id', '$sender_id']}}},
+            {'$lookup': {'from': 'users', 'localField': '_id', 'foreignField': '_id', 'as': 'user'}},
+            {'$project': {'_id': 1, 'user_id': '$_id', 'user': {'$arrayElemAt': ['$user', 0]}}},
+            {'$project': {'user_id': 1}}
+        ])
+
+        recent_users_from_messages = [str(user['_id']) for user in recent_users_from_messages_cursor]
+
+        # Query to fetch recent users from orders
+        recent_users_from_orders_cursor = db.orders.aggregate([
+            {'$match': {'user_id': ObjectId(user_id)}},
+            {'$unwind': '$cart_items'},  # Unwind to access each cart item
+            {'$lookup': {'from': 'users', 'localField': 'cart_items.seller', 'foreignField': '_id', 'as': 'seller'}},
+            {'$project': {'seller_id': '$cart_items.seller'}},
+            {'$group': {'_id': '$seller_id'}}
+        ])
+
+        recent_users_from_orders = [str(order['_id']) for order in recent_users_from_orders_cursor]
+
+        # Merge recent users from messages and orders
+        recent_users = recent_users_from_messages + recent_users_from_orders
+
+        return jsonify(recent_users), 200
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+from flask import request
+
+# Route to fetch the last recent chat
+@app.route('/chat/recent/<string:user_id>/<string:chat_user_id>', methods=['GET'])
+def get_last_recent_chat(user_id, chat_user_id):
+    try:
+        # Query to fetch the last recent chat
+        last_recent_chat = db.messages.find_one(
+            {'$or': [
+                {'sender_id': ObjectId(user_id), 'receiver_id': ObjectId(chat_user_id)},
+                {'sender_id': ObjectId(chat_user_id), 'receiver_id': ObjectId(user_id)}
+            ]},
+            sort=[('_id', -1)]  # Sort by _id in descending order to get the latest message
+        )
+        print(last_recent_chat)
+        if last_recent_chat:
+            last_recent_chat = {
+            '_id': str(last_recent_chat['_id']),
+            'sender_id': str(last_recent_chat['sender_id']),
+            'receiver_id': str(last_recent_chat['receiver_id']),
+            'message': last_recent_chat['message']
+        }
+            return jsonify(last_recent_chat), 200
+        else:
+            return jsonify({'message': 'No recent chat found'}), 404
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
 
 if __name__ == '__main__':
     app.run(debug=True)
