@@ -1,4 +1,5 @@
 from datetime import datetime
+from flask_socketio import SocketIO, emit
 from flask import Flask, request, jsonify, session
 from werkzeug.security import generate_password_hash, check_password_hash
 import re
@@ -10,28 +11,32 @@ from pymongo.server_api import ServerApi
 from flask_pymongo import PyMongo
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  # Change this to a random secret key
+app.config['SECRET_KEY'] = 'secret!'
+CORS(app,resources={r"/*":{"origins":"*"}})
+socketio = SocketIO(app,cors_allowed_origins="*")
 
-# uri = "mongodb+srv://arpanbari05:<password>@cluster0.gfggbs6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
-uri = "mongodb+srv://arpanbari05:Sachin10@cluster0.gfggbs6.mongodb.net/QuickBizz?retryWrites=true&w=majority&appName=Cluster0"
-# Create a new client and connect to the server
-client = MongoClient(uri)
 
-# Create a new client and connect to the server
-mongo = MongoClient(uri, server_api=ServerApi('1'))
-db = mongo.QuickBizz
-# Send a ping to confirm a successful connection
-try:
-    client.admin.command('ping')
-    print("Pinged your deployment. You successfully connected to MongoDB!")
-except Exception as e:
-    print(e)
 
-# app.config['MONGO_URI'] = 'mongodb://localhost:27017/QuickBizz'  # Update with your MongoDB URI
-# mongo = PyMongo(app)
 
-CORS(app)
+
+
+
+# PRODUCTION SERVER
+# # Create a new client and connect to the server
+# mongo = MongoClient(uri, server_api=ServerApi('1'))
+# db = mongo.QuickBizz
+# # Send a ping to confirm a successful connection
+# try:
+#     client.admin.command('ping')
+#     print("Pinged your deployment. You successfully connected to MongoDB!")
+# except Exception as e:
+#     print(e)
+
+# LOCAL SERVER
+app.config['MONGO_URI'] = 'mongodb://localhost:27017/QuickBizz'  # Update with your MongoDB URI
+mongo = PyMongo(app)
+db = mongo.db
 
 # Categories route
 @app.route('/categories', methods=['GET'])
@@ -634,8 +639,13 @@ def send_message():
     # Insert message into the database
     result = db.messages.insert_one(message_data)
 
-    return jsonify({'message': 'Message sent successfully', 'message_id': str(result.inserted_id)}), 201
+    # Emit the new message to the receiver's room
+    socketio.emit('new_message', {'sender_id': str(message_data['sender_id']),  # Convert ObjectId to string
+        'receiver_id': str(message_data['receiver_id']),  # Convert ObjectId to string
+        'message': message,
+        'timestamp': message_data['timestamp'].isoformat()}, )
 
+    return jsonify({'message': 'Message sent successfully', 'message_id': str(result.inserted_id)}), 201
 
 # Route to get messages between two users
 @app.route('/chat/<string:user_id>/<string:other_user_id>', methods=['GET'])
@@ -690,8 +700,6 @@ def get_recent_users(user_id):
         return jsonify({'error': str(e)}), 500
 
 
-from flask import request
-
 # Route to fetch the last recent chat
 @app.route('/chat/recent/<string:user_id>/<string:chat_user_id>', methods=['GET'])
 def get_last_recent_chat(user_id, chat_user_id):
@@ -720,4 +728,4 @@ def get_last_recent_chat(user_id, chat_user_id):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    socketio.run(app, debug=True)
