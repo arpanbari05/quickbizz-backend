@@ -24,19 +24,24 @@ socketio = SocketIO(app,cors_allowed_origins="*")
 
 # PRODUCTION SERVER
 # # Create a new client and connect to the server
-# mongo = MongoClient(uri, server_api=ServerApi('1'))
-# db = mongo.QuickBizz
-# # Send a ping to confirm a successful connection
-# try:
-#     client.admin.command('ping')
-#     print("Pinged your deployment. You successfully connected to MongoDB!")
-# except Exception as e:
-#     print(e)
+uri = "mongodb+srv://arpanbari05:Sachin10@cluster0.gfggbs6.mongodb.net/QuickBizz?retryWrites=true&w=majority&appName=Cluster0"
+# Create a new client and connect to the server
+client = MongoClient(uri)
+
+# Create a new client and connect to the server
+mongo = MongoClient(uri, server_api=ServerApi('1'))
+db = mongo.QuickBizz
+# Send a ping to confirm a successful connection
+try:
+    client.admin.command('ping')
+    print("Pinged your deployment. You successfully connected to MongoDB!")
+except Exception as e:
+    print(e)
 
 # LOCAL SERVER
-app.config['MONGO_URI'] = 'mongodb://localhost:27017/QuickBizz'  # Update with your MongoDB URI
-mongo = PyMongo(app)
-db = mongo.db
+# app.config['MONGO_URI'] = 'mongodb://localhost:27017/QuickBizz'  # Update with your MongoDB URI
+# mongo = PyMongo(app)
+# db = mongo.db
 
 # Categories route
 @app.route('/categories', methods=['GET'])
@@ -633,17 +638,21 @@ def send_message():
         'sender_id': ObjectId(sender_id),
         'receiver_id': ObjectId(receiver_id),
         'message': message,
-        'timestamp': datetime.utcnow()
+        'timestamp': datetime.utcnow(),
+        'seen': False  # Set seen status to False by default
     }
 
     # Insert message into the database
     result = db.messages.insert_one(message_data)
-
+    
     # Emit the new message to the receiver's room
-    socketio.emit('new_message', {'sender_id': str(message_data['sender_id']),  # Convert ObjectId to string
+    socketio.emit('new_message', {
+        'sender_id': str(message_data['sender_id']),  # Convert ObjectId to string
         'receiver_id': str(message_data['receiver_id']),  # Convert ObjectId to string
         'message': message,
-        'timestamp': message_data['timestamp'].isoformat()}, )
+        'timestamp': message_data['timestamp'].isoformat(),
+        'seen': False  # Initially mark the message as unseen
+    })
 
     return jsonify({'message': 'Message sent successfully', 'message_id': str(result.inserted_id)}), 201
 
@@ -664,6 +673,11 @@ def get_messages(user_id, other_user_id):
         message['sender_id'] = str(message['sender_id'])
         message['receiver_id'] = str(message['receiver_id'])
 
+        # Mark the message as seen if the recipient is the current user
+        if str(message['receiver_id']) == user_id:
+            message['seen'] = True
+            db.messages.update_one({'_id': ObjectId(message['_id'])}, {'$set': {'seen': True}})
+    
     return jsonify(messages), 200
 
 # Route to fetch recent users
@@ -712,14 +726,16 @@ def get_last_recent_chat(user_id, chat_user_id):
             ]},
             sort=[('_id', -1)]  # Sort by _id in descending order to get the latest message
         )
-        print(last_recent_chat)
         if last_recent_chat:
             last_recent_chat = {
             '_id': str(last_recent_chat['_id']),
             'sender_id': str(last_recent_chat['sender_id']),
             'receiver_id': str(last_recent_chat['receiver_id']),
-            'message': last_recent_chat['message']
-        }
+            'message': last_recent_chat['message'],
+            'timestamp': last_recent_chat['timestamp'].isoformat(),
+            'seen': last_recent_chat['seen']  # Initially mark the message as unseen
+            }
+            
             return jsonify(last_recent_chat), 200
         else:
             return jsonify({'message': 'No recent chat found'}), 404
