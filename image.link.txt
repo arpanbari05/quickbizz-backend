@@ -10,6 +10,7 @@ https://res.cloudinary.com/dhc1uvzta/image/upload/v1714297242/computer/Razer_Bla
 https://res.cloudinary.com/dhc1uvzta/image/upload/v1714297236/computer/Alienware_m15_R5_hht2dl.jpg
 https://res.cloudinary.com/dhc1uvzta/image/upload/v1714297231/computer/Gigabyte_Aero_15_OLED_q9to1f.jpg
 
+
 camera-
 https://res.cloudinary.com/dhc1uvzta/image/upload/v1714297189/camera/Canon_EOS_R5_ygltpl.jpg
 https://res.cloudinary.com/dhc1uvzta/image/upload/v1714297184/camera/Nikon_Z7_II_igfwyw.jpg
